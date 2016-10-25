@@ -1,3 +1,21 @@
+# webcomponents.org resources content
+
+## Installing
+```bash
+$ npm install
+```
+
+## Running locally
+```bash
+$ npm run start
+```
+
+## Tests & linting
+```bash
+$ npm run lint
+$ npm test
+```
+
 # Proposed API
 
 ## Content

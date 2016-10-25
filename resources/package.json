@@ -1,0 +1,27 @@
+{
+  "name": "web-components-resources",
+  "description": "Static resource content for webcomponents.org",
+  "version": "0.0.1",
+  "private": true,
+  "engines": {
+    "node": "~4.2"
+  },
+  "scripts": {
+    "start": "node app.js",
+    "monitor": "nodemon app.js",
+    "deploy": "gcloud app deploy",
+    "lint": "./node_modules/.bin/eslint */**.js",
+    "test": "mocha"
+  },
+  "dependencies": {
+    "express": "^4.13.4"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "chai-http": "^3.0.0",
+    "eslint": "^3.8.1",
+    "eslint-config-google": "^0.7.0",
+    "mocha": "^3.1.2",
+    "mock-fs": "^3.11.0"
+  }
+}
