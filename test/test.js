@@ -43,6 +43,16 @@ markdown`,
         done();
       });
   });
+
+
+  it('should not allow relative path urls', function(done) {
+    chai.request(server)
+      .get('/content/../app.js')
+      .end(function(err, response) {
+        response.should.have.status(400);
+        done();
+      });
+  });
 });
 
 describe('api/authors', function() {

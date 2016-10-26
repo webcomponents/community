@@ -7,6 +7,8 @@ let app = express();
 let authors = require('./authors.js');
 let metadata = {all: []};
 
+app.disable('x-powered-by');
+
 for (let meta of require('./content-gen.js')) {
   metadata.all.push(meta);
   if (!metadata[meta.category])
@@ -15,7 +17,16 @@ for (let meta of require('./content-gen.js')) {
 }
 
 app.get('/content/*', function(request, response) {
-  fs.readFile('documents/' + request.params[0], 'utf8', function(err, data) {
+  response.header("Access-Control-Allow-Origin", "*");
+  let requestedPath = fs.realPathSync('documents/' + request.params[0]);
+  let isolatedDir = fs.realPathSync('documents');
+
+  if (requestedPath.indexOf(isolatedDir) != 0) {
+    response.status(400).send('Invalid path');
+    return;
+  }
+
+  fs.readFile(requestedPath, 'utf8', function(err, data) {
     if (err) {
       response.status(404).send('Cannot find ' + err.path);
       return;
@@ -26,6 +37,8 @@ app.get('/content/*', function(request, response) {
 });
 
 app.get('/author/:id', function(request, response) {
+  response.header("Access-Control-Allow-Origin", "*");
+
   const id = request.params.id;
   if (!authors[id]) {
     response.status(404).send('Cannot find author ' + id);
@@ -45,12 +58,14 @@ function createResult(bucket, offset, limit) {
 }
 
 app.get('/resources', function(request, response) {
+  response.header("Access-Control-Allow-Origin", "*");
   const offset = parseInt(request.query.offset) || 0;
   const limit = parseInt(request.query.limit) || 10;
   response.status(200).send(createResult(metadata.all, offset, limit));
 });
 
 app.get('/resources/:bucket', function(request, response) {
+  response.header("Access-Control-Allow-Origin", "*");
   if (!metadata[request.params.bucket]) {
     response.status(404).send('Unknown category');
     return;
