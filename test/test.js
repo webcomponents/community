@@ -47,9 +47,9 @@ markdown`,
 
   it('should not allow relative path urls', function(done) {
     chai.request(server)
-      .get('/content/../app.js')
+      .get('/content/..%2F/app.js')
       .end(function(err, response) {
-        response.should.have.status(400);
+        response.should.have.status(404);
         done();
       });
   });

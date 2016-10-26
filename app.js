@@ -18,8 +18,13 @@ for (let meta of require('./content-gen.js')) {
 
 app.get('/content/*', function(request, response) {
   response.header("Access-Control-Allow-Origin", "*");
-  let requestedPath = fs.realPathSync('documents/' + request.params[0]);
-  let isolatedDir = fs.realPathSync('documents');
+  if (!fs.existsSync('documents/'+ request.params[0])) {
+    response.status(404).send('Invalid path');
+    return;
+  }
+
+  let requestedPath = fs.realpathSync('documents/' + request.params[0]);
+  let isolatedDir = fs.realpathSync('documents');
 
   if (requestedPath.indexOf(isolatedDir) != 0) {
     response.status(400).send('Invalid path');
