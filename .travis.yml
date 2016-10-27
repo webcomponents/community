@@ -11,7 +11,9 @@ before_deploy:
   - node gen.js
 deploy:
   provider: gae
+  skip_cleanup: true
   keyfile: client-secret.json
   project: web-components-resources
   config: app.yaml
+  version: 1
   default: true
