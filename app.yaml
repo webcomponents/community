@@ -1,12 +1,2 @@
 runtime: nodejs
 vm: true
-cache:
-  directories:
-    - node_modules
-deploy:
-  provider: gae
-  keyfile: custom-elements-staging-af6bde73b1eb.json
-  project: web-components-reosurces
-  config: client/build/bundled/client.yaml
-  version: 1
-  default: true
