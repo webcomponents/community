@@ -18,7 +18,14 @@ docpad.createInstance({}, function(err, docpadInstance) {
 function processFiles(err, files) {
   for (let file of files.models) {
     let attributes = file.meta.attributes;
+
+    // Add excerpt to metadata.
+    let body = file.attributes.body;
+    body = body.replace(/<!-- Excerpt -->[^]*/m, '').trim();
+    attributes.body = body;
+
     attributes.relativePath = file.attributes.relativePath;
+
     metadata.push(attributes);
   }
 
