@@ -22,7 +22,7 @@ function processFiles(err, files) {
     // Add excerpt to metadata.
     let body = file.attributes.body;
     body = body.replace(/<!-- Excerpt -->[^]*/m, '').trim();
-    attributes.body = body;
+    attributes.excerpt = body;
 
     attributes.relativePath = file.attributes.relativePath;
 
