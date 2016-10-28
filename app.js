@@ -17,7 +17,7 @@ for (let meta of require('./content-gen.js')) {
 }
 
 app.get('/content/*', function(request, response) {
-  response.header("Access-Control-Allow-Origin", "*");
+  response.header('Access-Control-Allow-Origin', '*');
   if (!fs.existsSync('documents/'+ request.params[0])) {
     response.status(404).send('Invalid path');
     return;
@@ -42,7 +42,7 @@ app.get('/content/*', function(request, response) {
 });
 
 app.get('/author/:id', function(request, response) {
-  response.header("Access-Control-Allow-Origin", "*");
+  response.header('Access-Control-Allow-Origin', '*');
 
   const id = request.params.id;
   if (!authors[id]) {
@@ -54,30 +54,32 @@ app.get('/author/:id', function(request, response) {
 });
 
 /**
- * @param {!Array.<Object>} metadata
+ * @param {!Array.<Object>} bucket
  * @param {number} offset
  * @param {number} limit
+ * @return {Object} result
  */
 function createResult(bucket, offset, limit) {
   return {count: bucket.length, results: bucket.slice(offset, offset + limit)};
 }
 
 app.get('/resources', function(request, response) {
-  response.header("Access-Control-Allow-Origin", "*");
+  response.header('Access-Control-Allow-Origin', '*');
   const offset = parseInt(request.query.offset) || 0;
   const limit = parseInt(request.query.limit) || 10;
   response.status(200).send(createResult(metadata.all, offset, limit));
 });
 
 app.get('/resources/:bucket', function(request, response) {
-  response.header("Access-Control-Allow-Origin", "*");
+  response.header('Access-Control-Allow-Origin', '*');
   if (!metadata[request.params.bucket]) {
     response.status(404).send('Unknown category');
     return;
   }
   const offset = parseInt(request.query.offset) || 0;
   const limit = parseInt(request.query.limit) || 10;
-  response.status(200).send(createResult(metadata[request.params.bucket], offset, limit));
+  response.status(200).send(
+    createResult(metadata[request.params.bucket], offset, limit));
 });
 
 // Start the server
