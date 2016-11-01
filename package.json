@@ -11,7 +11,7 @@
     "monitor": "nodemon app.js",
     "deploy": "node gen.js && gcloud app deploy",
     "lint": "./node_modules/.bin/eslint **.js */**.js",
-    "test": "node gen.js && mocha"
+    "test": "mocha"
   },
   "dependencies": {
     "express": "^4.13.4"
@@ -23,6 +23,7 @@
     "eslint": "^3.8.1",
     "eslint-config-google": "^0.7.0",
     "mocha": "^3.1.2",
-    "mock-fs": "^3.11.0"
+    "mock-fs": "^3.11.0",
+    "mock-require": "^1.3.0"
   }
 }

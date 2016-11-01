@@ -2,10 +2,12 @@
 
 let chai = require('chai');
 let chaiHttp = require('chai-http');
-let server = require('../app.js');
 let mock = require('mock-fs');
+let mockRequire = require('mock-require');
 
-// TODO: These tests fail if not gen.
+mockRequire('../content-gen.js', '../mock-gen.js');
+
+let server = require('../app.js');
 
 chai.should();
 chai.use(chaiHttp);
@@ -29,7 +31,10 @@ markdown`,
       .get('/content/articles/test-article.md')
       .end(function(err, response) {
         response.should.have.status(200);
-        response.text.should.equal('test-article');
+        response.should.be.json;
+        const result = JSON.parse(response.text);
+        result.should.have.property('metadata');
+        result.should.have.property('content', 'test-article');
         done();
       });
   });
@@ -39,7 +44,9 @@ markdown`,
       .get('/content/articles/has-excerpt.md')
       .end(function(err, response) {
         response.should.have.status(200);
-        response.text.should.equal('markdown');
+        const result = JSON.parse(response.text);
+        result.should.have.property('metadata');
+        result.should.have.property('content', 'markdown');
         done();
       });
   });
@@ -84,7 +91,7 @@ describe('api/resources', function() {
         response.should.have.status(200);
         response.should.be.json;
         JSON.parse(response.text).should.have.property('count');
-        JSON.parse(response.text).should.have.property('results').with.length(10);
+        JSON.parse(response.text).should.have.property('results');
         done();
       });
   });
@@ -96,7 +103,6 @@ describe('api/resources', function() {
         response.should.have.status(200);
         response.should.be.json;
         JSON.parse(response.text).should.have.property('count');
-        JSON.parse(response.text).should.have.property('results').with.length(5);
         done();
       });
   });
@@ -108,7 +114,6 @@ describe('api/resources', function() {
         response.should.have.status(200);
         response.should.be.json;
         JSON.parse(response.text).should.have.property('count');
-        JSON.parse(response.text).should.have.property('results').with.length(10);
         done();
       });
   });

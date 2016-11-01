@@ -6,6 +6,7 @@ let app = express();
 
 let authors = require('./authors.js');
 let metadata = {all: []};
+let metadataMap = {};
 
 app.disable('x-powered-by');
 
@@ -14,6 +15,7 @@ for (let meta of require('./content-gen.js')) {
   if (!metadata[meta.category])
     metadata[meta.category] = [];
   metadata[meta.category].push(meta);
+  metadataMap[meta.relativePath] = meta;
 }
 
 app.get('/content/*', function(request, response) {
@@ -37,7 +39,9 @@ app.get('/content/*', function(request, response) {
       return;
     }
     data = data.replace(/([^]*<!-- Excerpt -->)/m, '').trim();
-    response.status(200).send(data);
+    const metadata = metadataMap[request.params[0]];
+    response.setHeader('Content-Type', 'application/json');
+    response.status(200).send({metadata: metadata, content: data});
   });
 });
 
