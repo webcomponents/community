@@ -30,6 +30,8 @@ markdown`,
     chai.request(server)
       .get('/content/articles/test-article.md')
       .end(function(err, response) {
+        const header = response.header;
+        header.should.have.property('access-control-allow-origin', '*');
         response.should.have.status(200);
         response.should.be.json;
         const result = JSON.parse(response.text);
@@ -43,6 +45,8 @@ markdown`,
     chai.request(server)
       .get('/content/articles/has-excerpt.md')
       .end(function(err, response) {
+        const header = response.header;
+        header.should.have.property('access-control-allow-origin', '*');
         response.should.have.status(200);
         const result = JSON.parse(response.text);
         result.should.have.property('metadata');
@@ -88,6 +92,8 @@ describe('api/resources', function() {
     chai.request(server)
       .get('/resources')
       .end(function(err, response) {
+        const header = response.header;
+        header.should.have.property('access-control-allow-origin', '*');
         response.should.have.status(200);
         response.should.be.json;
         JSON.parse(response.text).should.have.property('count');
@@ -100,6 +106,8 @@ describe('api/resources', function() {
     chai.request(server)
       .get('/resources?limit=5')
       .end(function(err, response) {
+        const header = response.header;
+        header.should.have.property('access-control-allow-origin', '*');
         response.should.have.status(200);
         response.should.be.json;
         JSON.parse(response.text).should.have.property('count');
@@ -111,6 +119,8 @@ describe('api/resources', function() {
     chai.request(server)
       .get('/resources/articles')
       .end(function(err, response) {
+        const header = response.header;
+        header.should.have.property('access-control-allow-origin', '*');
         response.should.have.status(200);
         response.should.be.json;
         JSON.parse(response.text).should.have.property('count');
