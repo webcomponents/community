@@ -18,6 +18,8 @@ for (let meta of require('./content-gen.js')) {
   metadataMap[meta.relativePath] = meta;
 }
 
+app.use('/assets', express.static('documents/assets'));
+
 app.get('/content/*', function(request, response) {
   response.header('Access-Control-Allow-Origin', '*');
   if (!fs.existsSync('documents/'+ request.params[0])) {
