@@ -16,7 +16,7 @@ describe('api/content', function() {
   before(function() {
     mock({
       'documents/articles/test-article.md': 'test-article',
-      'documents/articles/has-excerpt.md': `
+      'documents/articles/has-excerpt.html.md': `
 metadata
 excerpt
 <!-- Excerpt -->
@@ -28,7 +28,7 @@ markdown`,
 
   it('should return something', function(done) {
     chai.request(server)
-      .get('/content/articles/test-article.md')
+      .get('/content/articles/test-article')
       .end(function(err, response) {
         const header = response.header;
         header.should.have.property('access-control-allow-origin', '*');
@@ -43,7 +43,7 @@ markdown`,
 
   it('should strip excerpt from response', function(done) {
     chai.request(server)
-      .get('/content/articles/has-excerpt.md')
+      .get('/content/articles/has-excerpt')
       .end(function(err, response) {
         const header = response.header;
         header.should.have.property('access-control-allow-origin', '*');
@@ -54,7 +54,6 @@ markdown`,
         done();
       });
   });
-
 
   it('should not allow relative path urls', function(done) {
     chai.request(server)

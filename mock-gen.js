@@ -5,7 +5,7 @@ module.exports = [
       'an_author',
     ],
     'category': 'articles',
-    'relativePath': 'articles/test-article.md',
+    'relativePath': 'articles/test-article',
   },
   {
     'title': 'excerpt-article',
@@ -14,6 +14,6 @@ module.exports = [
       'second_author',
     ],
     'category': 'articles',
-    'relativePath': 'articles/has-excerpt.md',
+    'relativePath': 'articles/has-excerpt',
   },
 ];

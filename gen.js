@@ -24,7 +24,7 @@ function processFiles(err, files) {
     body = body.replace(/<!-- Excerpt -->[^]*/m, '').trim();
     attributes.excerpt = body;
 
-    attributes.relativePath = file.attributes.relativePath;
+    attributes.relativePath = file.attributes.relativePath.replace(/\..*/, '');
 
     metadata.push(attributes);
   }
