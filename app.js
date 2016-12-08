@@ -22,20 +22,28 @@ app.use('/assets', express.static('assets'));
 
 app.get('/content/*', function(request, response) {
   response.header('Access-Control-Allow-Origin', '*');
-  if (!fs.existsSync('documents/'+ request.params[0])) {
+  let extensions = ['.md', '.html', '.html.md'];
+  let file = null;
+
+  for (let extension of extensions) {
+    if (fs.existsSync('documents/'+ request.params[0] + extension))
+      file = 'documents/'+ request.params[0] + extension;
+  }
+
+  if (!file) {
     response.status(404).send('Invalid path');
     return;
   }
 
-  let requestedPath = fs.realpathSync('documents/' + request.params[0]);
+  let path = fs.realpathSync(file);
   let isolatedDir = fs.realpathSync('documents');
 
-  if (requestedPath.indexOf(isolatedDir) != 0) {
+  if (path.indexOf(isolatedDir) != 0) {
     response.status(400).send('Invalid path');
     return;
   }
 
-  fs.readFile(requestedPath, 'utf8', function(err, data) {
+  fs.readFile(path, 'utf8', function(err, data) {
     if (err) {
       response.status(404).send('Cannot find ' + err.path);
       return;
