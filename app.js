@@ -20,6 +20,9 @@ for (let meta of require('./content-gen.js')) {
 
 app.use('/assets', express.static('assets'));
 
+// Legacy image paths from webcomponents.github.io
+app.use('/img/stories', express.static('assets/images'));
+
 app.get('/content/*', function(request, response) {
   response.header('Access-Control-Allow-Origin', '*');
   let extensions = ['.md', '.html', '.html.md'];
