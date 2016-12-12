@@ -24,7 +24,8 @@ app.use('/assets', express.static('assets'));
 app.use('/img/stories', express.static('assets/images'));
 
 // Used for static pages that don't show up in any other resources
-app.use('/static', express.static('static'));
+app.use('/static', express.static('static',
+  {setHeaders: (res) => res.header('Access-Control-Allow-Origin', '*')}));
 
 app.get('/content/*', function(request, response) {
   response.header('Access-Control-Allow-Origin', '*');
