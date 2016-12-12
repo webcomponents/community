@@ -158,6 +158,3 @@ This native behavior is difficult to polyfill so the HTML Imports polyfill doesn
 ```
 
 In native HTML Imports, `document.currentScript.ownerDocument` references the import document itself. In the polyfill, use `document._currentScript.ownerDocument` (note the underscore).
-
-
-
