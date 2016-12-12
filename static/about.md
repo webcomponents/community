@@ -1,4 +1,4 @@
-= About webcomponents.org =
+# About webcomponents.org
 
 WebComponents.org aims to make it easy to share and discover reusable web UI components. As well as a place to publish, browse and search for components, WebComponents.org provides articles, presentations, podcasts, tools and more to help web professionals build first-class DOM objects in the browsers. All the content on this site is totally free, and contributions are welcome.
 
