@@ -44,7 +44,6 @@ Use JavaScript to define a new HTML element and its tag with the customElements 
 
 For example, to define a mobile drawer panel, `<app-drawer>`:
 ```js
-
 class AppDrawer extends HTMLElement {...}
 window.customElements.define('app-drawer', AppDrawer);
 ```
