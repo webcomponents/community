@@ -28,6 +28,12 @@ GET /content/:path
 ```
 Returns blob of markdown/html content.
 
+## Static
+```
+GET /static/:file
+```
+Returns static file.
+
 ## List
 ```
 GET /resources/[:type]
