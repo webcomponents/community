@@ -14,7 +14,7 @@ When choosing a web component library, make sure it has a large enough featurese
 
 # Existing web component libraries
 
- * [Polymer](https://www.polymer-project.org/1.0/) is a web component library built by Google, with a simple element creation API. Polymer offers one- and two-way data binding into element templates, and provides shims for better cross-browser performance.
+ * [Polymer](https://www.polymer-project.org/) is a web component library built by Google, with a simple element creation API. Polymer offers one- and two-way data binding into element templates, and provides shims for better cross-browser performance.
 
  * [Skate.js](http://skate.js.org/) is a library built on top of the W3C web component specs that enables you to write functional and performant web components with a very small footprint. Skate is Inherently cross-framework compatible. For example, it works seamlessly with - and complements - React and other frameworks.
 
