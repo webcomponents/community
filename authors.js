@@ -2,25 +2,25 @@ module.exports = {
     aaron_frost: {
         name: "Aaron Frost",
         bio: "Aaron is an Angular Google Developer Expert, JavaScript Engineer at Domo, Inc., & Panelist on JavaScript Jabber.",
-        image: "https://avatars1.githubusercontent.com/u/662832?v=3&s=80",
+        github: "662832",
         twitter: "js_dev"
     },
     adam_onishi: {
         name: "Adam Onishi",
         bio: "Adam is a Web developer and designer focusing on accessibility, progressive enhancement, and high quality code",
-        image: "https://avatars2.githubusercontent.com/u/1240073?v=3&s=80",
+        github: "1240073",
         twitter: "onishiweb"
     },
     amal_hussein: {
         name: "Amal Hussein",
         bio: "Amal Hussein is a software developer in Boston, MA & a panelist on The Web Platform Podcast",
-        image: "https://avatars1.githubusercontent.com/u/6717823?v=3&s=80",
+        github: "6717823",
         twitter: "nomadtechie"
     },
     arron_eicholz: {
         name: "Arron Eicholz",
         bio: "Arron is a Program Manager at Microsoft and is currently focused on the Edge Browser",
-        image: "https://avatars1.githubusercontent.com/u/4141737?v=3&s=80",
+        github: "4141737",
         twitter: "mrcss"
     },
     addy_osmani: {
@@ -38,13 +38,13 @@ module.exports = {
     aj_oneal: {
         name: "AJ O'Neal",
         bio: "AJ is a full stack JavaScript developer & Panelist on JavaScript Jabber.",
-        image: "https://avatars2.githubusercontent.com/u/122831?v=3&s=80",
+        github: "122831",
         twitter: "coolaj86"
     },
     aki_rodic: {
         name: "Aki Rodić",
         bio: "Aki is a technical artist, creative coder or something along those lines. He worked for Electronic Arts, Pixar, LucasArts, Google and now he currently works at Flux Factory. His biggest passion is bringing high quality 3D graphics to the web and creating tools for all sorts of creative applications.",
-        image: "https://avatars3.githubusercontent.com/u/708984?s=80",
+        github: "708984",
         twitter: "akirodic"
     },
     alex_komoroske: {
@@ -56,7 +56,7 @@ module.exports = {
     alex_russell: {
         name: "Alex Russell",
         bio: "Alex is a Software Engineer at Google and one of the original creators of Web Components",
-        image: "https://avatars0.githubusercontent.com/u/97331?v=3&s=80",
+        github: "97331",
         twitter: "slightlylate"
     },
     alex_mingoia: {
@@ -74,13 +74,13 @@ module.exports = {
     andrea_giammarchi: {
         name: "Andrea Giammarchi",
         bio: "Andrea is a former JavaScript engineer at Nokia, Facebook, and Twitter.",
-        image: "https://avatars3.githubusercontent.com/u/85749?s=80",
+        github: "85749",
         twitter: "WebReflection"
     },
     andrew_rota: {
         name: "Andrew Rota",
         bio: "Andrew is a front-end software engineer who specializes in building interactive HTML5 JavaScript web applications. He is currently a JavaScript Engineer at Wayfair in Boston.",
-        image: "https://avatars2.githubusercontent.com/u/718017?s=80",
+        github: "718017",
         twitter: "AndrewRota"
     },
     angelina_fabbro: {
@@ -92,13 +92,13 @@ module.exports = {
     anne_van_kesteren: {
         name: "Anne van Kesteren",
         bio: "Anne is a Mozillian who writes standards for the web platform. He loves talking about turning the web into an OS.",
-        image: "https://avatars.githubusercontent.com/u/1544111?s=80",
+        github: "1544111",
         twitter: "annevk"
     },
     anthony_koerber: {
       name: "Anthony Koerber",
       bio: "Anthony is a Front End Developer working on the Strand Library at MediaMath",
-      image: "https://avatars1.githubusercontent.com/u/807662?v=3&s=80",
+      github: "807662",
       twitter: "DrDooganMeister"
     },
     ajit_kumar: {
@@ -110,31 +110,31 @@ module.exports = {
     bill_heaton: {
         name: "Bill Heaton",
         bio: "Bill is a Senior UI Engineer at CrowdStrike who loves to build great applications with Ember.js.",
-        image: "https://avatars2.githubusercontent.com/u/17178?v=3&s=80",
+        github: "17178",
         twitter: "pixelhandler"
     },
     bruce_lawson: {
         name: "Bruce Lawson",
         bio: "Bruce is co-author of Introducing HTML5 and Opera employee.",
-        image: "https://avatars0.githubusercontent.com/u/378048?v=3&s=80",
+        github: "378048",
         twitter: "brucel"
     },
     carl_franklin: {
         name: "Carl Franklin",
         bio: "Carl is a .NET developer and co-host of .NET Rocks.",
-        image: "https://avatars2.githubusercontent.com/u/1486348?v=3&s=80",
+        github: "1486348",
         twitter: "carlfranklin"
     },
     carlos_taborda: {
         name: "Carlos Taborda",
         bio: "Carlos is host of Tech People at Work Podcast and Co-Author of ng-book 2",
-        image: "https://avatars1.githubusercontent.com/u/44930?v=3&s=80",
+        github: "44930",
         twitter: "cartab"
     },
     carmen_popoviciu: {
         name: "Carmen Popoviciu",
         bio: "Carmen is a front-end engineer and the leading lady of the Dutch AngularJS User Group. She loves Angular and is passionate about its community. She hopes to one day make a difference for the web with the code she writes.",
-        image: "https://avatars2.githubusercontent.com/u/4638332?s=80",
+        github: "4638332",
         twitter: "CarmenPopoviciu"
     },
     chris_coyier:  {
@@ -146,7 +146,7 @@ module.exports = {
     chris_joel: {
         name: "Chris Joel",
         bio: "Chris is a developer at Google working on the Polymer Elements Catalog",
-        image: "https://avatars1.githubusercontent.com/u/240083?v=3&s=80",
+        github: "240083",
         twitter: "robodynamo"
     },
     community: {
@@ -158,13 +158,13 @@ module.exports = {
     charles_grugan: {
       name: "Charles Grugan",
       bio: "Charles is a software engineer at Comcast",
-      image: "https://avatars1.githubusercontent.com/u/1616995?v=3&s=80",
+      github: "1616995",
       twitter: "che_effe"
     },
     charles_max_wood: {
         name: "Charles Max Wood",
         bio: "Chuck is host of JavaScript Jabber & Adventures In Angular as well as several other popular developer podcasts. He is a freelance podcaster, programmer, & web entrepreneur.",
-        image: "https://avatars0.githubusercontent.com/u/10699?v=3&s=80",
+        github: "10699",
         twitter: "cmaxw"
     },
     christian_heilmann: {
@@ -176,25 +176,25 @@ module.exports = {
     christian_smith: {
         name: "Christian Smith",
         bio: "Christian is an open source developer, startup enthusiast, and creator/maintainer of the Anvil Connect ID Server as well as a panelist on The Web Platform Podcast.",
-        image: "https://avatars2.githubusercontent.com/u/332377?v=3&s=80",
+        github: "332377",
         twitter: "anvilhacks"
     },
     christopher_chedeau: {
         name: "Christopher Chadeau",
         bio: "Christopher is a Front-end Engineer at Facebook working on React and React Native",
-        image: "https://avatars1.githubusercontent.com/u/197597?v=3&s=80",
+        github: "197597",
         twitter: "Vjeux"
     },
     cory_house: {
         name: "Cory House",
         bio: "Cory is a full stack web application developer in the Kansas City area specializing in C#.Net and jQuery.",
-        image: "https://avatars3.githubusercontent.com/u/1688997?v=3&s=80",
+        github: "1688997",
         twitter: "housecor"
     },
     dane_oconner: {
         name: "Dane O'Conner",
         bio: "Dane is a programmer, entrepreneur, and panelist on Polymer Podcast",
-        image: "https://avatars0.githubusercontent.com/u/84087?v=3&s=80",
+        github: "84087",
         twitter: "thedeeno"
     },
     daniel_buchner: {
@@ -206,19 +206,19 @@ module.exports = {
     daniel_freedman: {
         name: "Daniel Freedman",
         bio: "Dan is a developer at Google on the Polymer team",
-        image: "https://avatars1.githubusercontent.com/u/46725?v=3&s=80",
+        github: "46725",
         twitter: "danfreedman"
     },
     daniel_lasky: {
       name: "Daniel Lasky",
       bio: "Daniel is a Front End Developer at MediaMath working on the Strand Library",
-      image: "https://avatars0.githubusercontent.com/u/1529402?v=3&s=80",
+      github: "1529402",
       twitter: "aerolith"
     },
     danny_blue: {
         name: "Danny Blue",
         bio: "Danny is a front end developer at Deloitte Digital, Web Components Enthusiast, and panelist on The Web Platform Podcast.",
-        image: "https://avatars2.githubusercontent.com/u/6563621?v=3&s=80",
+        github: "6563621",
         twitter: "dee_bloo"
     },
     dave_arel: {
@@ -230,19 +230,19 @@ module.exports = {
     dave_rupert: {
         name: "Dave Rupert",
         bio: "David is a lead developer at Paravel & co-host of Shop Talk Show.",
-        image: "https://avatars2.githubusercontent.com/u/42218?v=3&s=80",
+        github: "42218",
         twitter: "davatron5000"
     },
     denis_radin: {
         name: "Denis Radin",
         bio: "Denis is a front-end engineer with passion for experiments & performance optimization and a bit of an expert in interaction design",
-        image: "https://avatars3.githubusercontent.com/u/810671?v=3&s=80",
+        github: "810671",
         twitter: "pixelscommander"
     },
     dimitri_glazkov: {
         name: "Dimitri Glazkov",
         bio: "Dimitri is a Software Engineer who works on Blink, currently focused on making Web Components a reality. As a former Web developer, he knows the pains of making Web applications not suck, and thus keeps on pushing the Web platform forward to make it more beautiful (and sane) to work with.",
-        image: "https://avatars2.githubusercontent.com/u/1934?s=80",
+        github: "1934",
         twitter: "dglazkov"
     },
     dominic_cooney: {
@@ -254,7 +254,7 @@ module.exports = {
     dr_axel_rauschmayer: {
         name: "Dr. Axel Rauschmayer",
         bio: "Axel is the author of 'Speaking JavaScript' and 'Exploring ES6' books. He has done extensive research into programming language design and has followed the state and future of JavaScript since its creation.",
-        image: "https://avatars1.githubusercontent.com/u/526114?v=3&s=80",
+        github: "526114",
         twitter: "rauschma"
     },
     emily_lewis: {
@@ -272,43 +272,43 @@ module.exports = {
     eric_knudtson: {
         name: "Eric Knudtson",
         bio: "Eric is a software developer at GE Digital working on the Industrial Internet & Predix UI",
-        image: "https://avatars3.githubusercontent.com/u/13161?v=3&s=80",
+        github: "13161",
         twitter: "vikingux"
     },
     erik_isaksen: {
         name: "Erik Isaksen",
         bio: "Erik is a Front End Developer, W3C HTML Invited Expert, Chrome HTML5 Google Developer Expert, and host of The Web Platform Podcast.",
-        image: "https://avatars1.githubusercontent.com/u/647043?v=3&s=80",
+        github: "647043",
         twitter: "eisaksen"
     },
     ewa_gasperowicz: {
         name: "Ewa Gasperowicz",
         bio: "Ewa is a Developer Programs Engineer at Google.",
-        image: "https://avatars0.githubusercontent.com/u/1914261?v=3&s=80",
+        github: "1914261",
         twitter: "devnook"
     },
     filipe_araujo: {
         name: "Filipe Araujo",
         bio: "Filipe is a Web Architect & a panelist on Polymer Podcast",
-        image: "https://avatars0.githubusercontent.com/u/189541?v=3&s=80",
+        github: "189541",
         twitter: "filipearaujo"
     },
     gil_fink: {
       name: "Gil Fink",
       bio: "Gil is a web developer and the founder of sparXys",
-      image: "https://avatars3.githubusercontent.com/u/1590253?v=3&s=80",
+      github: "1590253",
       twitter: "gilfink"
     },
     glen_maddern: {
         name: "Glen Maddern",
         bio: "Glen is an independent Web Developer from Melbourne, Australia.",
-        image: "https://avatars0.githubusercontent.com/u/23264?v=3&s=80",
+        github: "23264",
         twitter: "glenmaddern"
     },
     guy_bedford: {
         name: "Guy Bedford",
         bio: "Guy is a JavaScript developer and open source contributor currently exploring browser package management with http://jspm.io ",
-        image: "https://avatars1.githubusercontent.com/u/598730?v=3&s=80",
+        github: "598730",
         twitter: "guybedford"
     },
     hidde_de_vries: {
@@ -320,7 +320,7 @@ module.exports = {
     ian_feather: {
         name: "Ian Feather",
         bio: "Ian is a Senior Software Engineer at Schibsted Media",
-        image: "https://avatars3.githubusercontent.com/u/814861?v=3&s=80",
+        github: "814861",
         twitter: "ianfeather"
     },
     ian_macleod: {
@@ -332,7 +332,7 @@ module.exports = {
     jamison_dance: {
         name: "Jamison Dance",
         bio: "Jamison is a software engineer at Kuali Co. and panelist on JavaScript Jabber.",
-        image: "https://avatars2.githubusercontent.com/u/72027?v=3&s=80",
+        github: "72027",
         twitter: "jergason"
     },
     jan_miksovsky: {
@@ -356,97 +356,97 @@ module.exports = {
     jeffrey_posnick: {
       name: "Jeffrey Posnick",
       bio: "Jeffrey a member of Google's Open Web Platform Developer Relations team",
-      image: "https://avatars3.githubusercontent.com/u/1749548?v=3&s=80",
+      github: "1749548",
       twitter: "jeffposnick"
     },
     jen_simmons: {
         name: "Jen Simmons",
         bio: "Jen is a professional designer and developer in the New York City area. She is host of The Web Ahead Podcast.",
-        image: "https://avatars2.githubusercontent.com/u/108474?v=3&s=80",
+        github: "108474",
         twitter: "jensimmons"
     },
     jenn_voss: {
       name: "Jenn Voss",
       bio: "Jenn is a Front End Developer and panelist on The Polymer Podcast.",
-      image: "https://avatars0.githubusercontent.com/u/1682552?v=3&s=80",
+      github: "1682552",
       twitter: "VossJenn"
     },
     jeremy_fairbank: {
         name: "Jeremy Fairbank",
         bio: "Jeremy is a web developer who enjoys to work with JavaScript and Ruby. He likes to build modular, scalable applications with reasonable abstraction to keep things DRY. He really enjoys helping and teaching others, especially about JavaScript.",
-        image: "https://avatars2.githubusercontent.com/u/195580?s=80",
+        github: "195580",
         twitter: "ElPapaPollo"
     },
     jeremy_keith: {
         name: "Jeremy Keith",
         bio: "Jeremy is a web developer living in Brighton, England",
-        image: "https://avatars2.githubusercontent.com/u/18826?v=3&s=80",
+        github: "18826",
         twitter: "adactio"
     },
     joe_eames: {
         name: "Joe Eames",
         bio: "Joe is organizer of NG-Conf, front end developer, and panelist on JavaScript Jabber.",
-        image: "https://avatars0.githubusercontent.com/u/1072285?v=3&s=80",
+        github: "1072285",
         twitter: "josepheames"
     },
     john_rogerson: {
         name: "John Rogerson",
         bio: "John is a professional Web Developer and Lead Design Technologist at GE Electric",
-        image: "https://avatars1.githubusercontent.com/u/154399?v=3&s=80",
+        github: "154399",
         twitter: "iboxifoo"
     },
     jonathan_belcher: {
         name: "Jonathan Belcher",
         bio: "Jonathan is a developer and panelist on Polymer Podcast",
-        image: "https://avatars2.githubusercontent.com/u/6817400?v=3&s=80",
+        github: "6817400",
         twitter: "belcherj"
     },
     jonathon_creenaune: {
       name: "Jonathon Creenaune",
       bio: "Jonathon is a Developer Manager at Atlassian",
-      image: "https://avatars3.githubusercontent.com/u/1205739?v=3&s=80",
+      github: "1205739",
       twitter: "jcreenaune"
     },
     jordan_last: {
         name: "Jordan Last",
         bio: "Jordan is a budding full-stack web platform developer",
-        image: "https://avatars0.githubusercontent.com/u/7000719?v=3&s=80",
+        github: "7000719",
         twitter: "lastmjs"
     },
     josh_crowther: {
         name: "Josh Crowther",
         bio: "Josh is a full-stack engineer currently working with Node.js based stacks. He's profficient in JavaScript particularly with the Angular.js framework.",
-        image: "https://avatars2.githubusercontent.com/u/5588878?s=80",
+        github: "5588878",
         twitter: "jshcrowthe"
     },
     joshua_peek: {
         name: "Joshua Peek",
         bio: "Josh is a front-end developer at GitHub. Contributor to Bower, and maintainer of Sprockets, the Ruby on Rails Asset pipeline tool.",
-        image: "https://avatars2.githubusercontent.com/u/137?s=80",
+        github: "137",
         twitter: "joshpeek"
     },
     jouni_koivuviita: {
       name: "Jouni Koivuviita",
       bio: "Jouni is a Product Manager of Vaadin Components and Design Director at Vaadin",
-      image: "https://avatars0.githubusercontent.com/u/66382?v=3&s=80",
+      github: "66382",
       twitter: "jouni"
     },
     justin_ribeiro: {
         name: "Justin Ribeiro",
         bio: "Justin is a Wearables Google Developer Expert & Web Components enthusiast",
-        image: "https://avatars0.githubusercontent.com/u/643503?v=3&s=80",
+        github: "643503",
         twitter: "justinribeiro"
     },
     juha_jarvi: {
         name: "Juha Järvi",
         bio: "Juha is a programmer and founder at BusFaster Ltd, creating web map tools with TypeScript and asm.js. Always looking into new technology, ever since getting a Commodore 128 way back.",
-        image: "https://avatars1.githubusercontent.com/u/778781?v=3&s=80",
+        github: "778781",
         twitter: "chartojs"
     },
     justin_moore: {
       name: "Justin Moore",
       bio: "Justin is a Software Engineer working on the Strand Library at MediaMath",
-      image: "https://avatars1.githubusercontent.com/u/2549335?v=3&s=80",
+      github: "2549335",
       twitter: "jcmmit"
     },
     kaelig: {
@@ -458,25 +458,25 @@ module.exports = {
     kara_erickson: {
         name: "Kara Erickson",
         bio: "Kara is a Web Engineer at OpenTable where she builds Angular applications.",
-        image: "https://avatars2.githubusercontent.com/u/3871688?v=3&s=80",
+        github: "3871688",
         twitter: "karaforthewin"
     },
     kent_c_dodds: {
         name: "Kent C Dodds",
         bio: "Kent is a software developer at Paypal & host of JavaScript Air",
-        image: "https://avatars3.githubusercontent.com/u/1500684?v=3&s=80",
+        github: "1500684",
         twitter: "kentcdodds"
     },
     kevin_gleason: {
         name: "Kevin Gleason",
         bio: "Kevin is an Embedded Systems and Internet of Things Intern at Pubnub",
-        image: "https://avatars3.githubusercontent.com/u/3036970?v=3&s=80",
+        github: "3036970",
         twitter: "KevinAGleason"
     },
     kevin_schaaf: {
         name: "Kevin Schaaf",
         bio: "Kevin is a Senior Engineer on the Google Polymer team",
-        image: "https://avatars3.githubusercontent.com/u/1354932?v=3&s=80",
+        github: "1354932",
         twitter: "kevinpschaaf"
     },
     lea_alcantara: {
@@ -488,31 +488,31 @@ module.exports = {
     leon_revill: {
       name: "Leon Revill",
       bio: "Leon is a mobile developer, author, blogger, and Web Component advocate.",
-      image: "https://avatars2.githubusercontent.com/u/2720042?v=3&s=80",
+      github: "2720042",
       twitter: "revillweb"
     },
     levent_gurses: {
         name: "Levent Gurses",
         bio: "Levent is a mobile developer, speaker and community organizer. He codes in Swift/Objective-C, Java, and JavaScript on the MEAN stack.",
-        image: "https://avatars1.githubusercontent.com/u/2237424?s=80",
+        github: "2237424",
         twitter: "gursesl"
     },
     lucas_mazza: {
         name: "Lucas Mazza",
         bio: "Lucas is a software engineer at Plataformatec team dealing with Ruby on Rails, HTML & CSS, JavaScript and whatever may come.",
-        image: "https://avatars2.githubusercontent.com/u/80978?s=80",
+        github: "80978",
         twitter: "lucasmazza"
     },
     manolo_carrasco: {
       name: "Manolo Carrasco",
       bio: "Manolo is a Software Engineer at Vaadin",
-      image: "https://avatars3.githubusercontent.com/u/161853?v=3&s=80",
+      github: "161853",
       twitter: "dodotis"
     },
     marcus_hellberg: {
         name: "Marcus Hellberg",
         bio: "Marcus is a long time Vaadin user working as a developer advocate. His daily work includes everything from writing blogs and tech demos to attending events and giving presentations on all things Vaadin and web related.",
-        image: "https://vaadin.com/image/user_male_portrait?img_id=119203&t=1453780902864",
+        image: "https://vaadin.com/image/user_male_portrait",
         twitter: "marcushellberg"
     },
     marcy_sutton: {
@@ -548,13 +548,13 @@ module.exports = {
     maurizio_mangione: {
         name: "Maurizio Mangione",
         bio: "Maurizio is a Google Developers Expert for web technologies with the specialization on Polymer.",
-        image: "https://avatars2.githubusercontent.com/u/1193298?v=3&s=80",
+        github: "1193298",
         twitter: "granze"
     },
     mauro_solcia: {
         name: "Mauro Solcia",
         bio: "Mauro is a Google Developer Expert for Drive & Web Component enthusiast",
-        image: "https://avatars2.githubusercontent.com/u/1431346?v=3&s=80",
+        github: "1431346",
         twitter: "smokybob84"
     },
     michael_bleigh: {
@@ -572,19 +572,19 @@ module.exports = {
     monica_dinculescu: {
         name: "Monica Dinculescu",
         bio: "Monica is a Software Engineer working on Polymer and Chrome for Google",
-        image: "https://avatars2.githubusercontent.com/u/1369170?v=3&s=80",
+        github: "1369170",
         twitter: "notwaldorf"
     },
     nick_niemeir: {
         name: "Nick Niemeir",
         bio: "Nick is a JavaScript Agent Engineer at New Relic",
-        image: "https://avatars2.githubusercontent.com/u/357596?v=3&s=80",
+        github: "357596",
         twitter: "nickniemeir"
     },
     pam_selle: {
         name: "Pam Selle",
         bio: "Pam is a software developer and panelist on JavaScript Air",
-        image: "https://avatars2.githubusercontent.com/u/204372?v=3&s=80", 
+        github: "204372", 
         twitter: "pamasaur"
     },
     pascal_precht: {
@@ -602,7 +602,7 @@ module.exports = {
     phil_leggetter: {
         name: "Phil Leggetter",
         bio: "Phil is Head of Developer Evangelism at Pusher. He frequently writes articles and give talks on realtime web technologies and general web technology.",
-        image: "https://avatars2.githubusercontent.com/u/328367?s=80",
+        github: "328367",
         twitter: "leggetter"
     },
     philip_walton: {
@@ -614,13 +614,13 @@ module.exports = {
     polymer: {
         name: "Polymer",
         bio: "Posts marked as authored by the Polymer library team.",
-        image: "https://avatars2.githubusercontent.com/u/2159051?s=80",
+        github: "2159051",
         twitter: "polymer"
     },
     paul_bakaus: {
         name: "Paul Bakaus",
         bio: "Paul is a Software Engineer at Google",
-        image: "https://avatars3.githubusercontent.com/u/43004?v=3&s=80",
+        github: "43004",
         twitter: "pbakaus"
     },
     paul_lewis: {
@@ -632,13 +632,13 @@ module.exports = {
     rachael_moore: {
         name: "Rachael L Moore",
         bio: "Rachael is a UI Engineer at OpenTable specializing in the implementation of enterprise-scale interfaces using HTML, CSS, and JavaScript.",
-        image: "https://avatars2.githubusercontent.com/u/1043291?v=3&s=80",
+        github: "1043291",
         twitter: "morewry"
     },
     raphael_rougeron: {
         name: "Raphaël Rougeron",
         bio: "Raphael is creator of The Bosonic Project, entrepreneur, and software engineer.",
-        image: "https://avatars0.githubusercontent.com/u/5461?v=3&s=80",
+        github: "5461",
         twitter: "goldoraf"
     },
     rey_bango: {
@@ -650,7 +650,7 @@ module.exports = {
     richard_campbell: {
         name: "Richard Campbell",
         bio: "Richard is a .NET developer and co-host of .NET Rocks.",
-        image: "https://avatars1.githubusercontent.com/u/1779253?v=3&s=80",
+        github: "1779253",
         twitter: "richcampbell"
     },
     rob_dodson: {
@@ -674,25 +674,25 @@ module.exports = {
     scott_hanselman: {
         name: "Scott Hanselman",
         bio: "Scott is the host of Hanselminutes Podcast",
-        image : "https://avatars3.githubusercontent.com/u/2892?v=3&s=80",
+        github: "2892",
         twitter: "shanselman"
     },
     sebastian_henneberg: {
         name: "Sebastian Henneberg",
         bio: "Sebastian is a software engineer",
-        image : "https://avatars1.githubusercontent.com/u/3903324?v=3&s=80",
+        github: "3903324",
         twitter: "s_henneberg"
     },
     seb_cevey: {
         name: "Sébastien Cevey",
         bio: "Sébastien is a Software Engineer at the Guardian, working predominently on editorial tools. He currently lives in London, UK.",
-        image: "https://avatars2.githubusercontent.com/u/36964?s=80",
+        github: "36964",
         twitter: "theefer"
     },
     steve_faulkner: {
         name: "Steve Faulkner",
         bio: "Steve is Principal Accessibility Engineer at Paciello Group and Web Components Accessibility Expert.",
-        image: "https://avatars1.githubusercontent.com/u/835859?v=3&s=80",
+        github: "835859",
         twitter: "stevefaulkner"
     },
     steve_souders: {
@@ -704,7 +704,7 @@ module.exports = {
     soledad_penades: {
         name: "Soledad Penades",
         bio: "Soledad is a Senior Apps Developer working on improving the Web Platform at Mozilla.",
-        image: "https://avatars2.githubusercontent.com/u/5609?s=80",
+        github: "5609",
         twitter: "supersole"
     },
     taylor_savage: {
@@ -722,7 +722,7 @@ module.exports = {
     tim_vanderlippe: {
       name: "Tim van der Lippe",
       bio: "Tim is a Web Technologies Google Developer Expert",
-      image: "https://avatars0.githubusercontent.com/u/5948271?v=3&s=80",
+      github: "5948271",
       twitter: "TimvdLippe"
     },
     tom_dale: {
@@ -734,7 +734,7 @@ module.exports = {
     tomalec: {
         name: "Tomek Wytrębowicz",
         bio: "Tomek is a front-end engineer at Starcounter AB, author of many Juicy-elements and PuppetJs features.",
-        gravatar: "https://avatars2.githubusercontent.com/u/17435?v=3&s=80",
+        github: "17435",
         twitter: "tomalecpl"
     },
     tomomi_imura: {
@@ -746,31 +746,31 @@ module.exports = {
     travis_leithead: {
         name: "Travis Leithead",
         bio: "Travis is a Software Engineer & Internet Maker at Microsoft and is currently focused on the Edge Browser",
-        image: "https://avatars0.githubusercontent.com/u/2152696?v=3&s=80",
+        github: "2152696",
         twitter: "TravisLeithead"
     },
     trey_shugart: {
       name: "Trey Shugart",
       bio: "Trey is software developer at Atlassian & creator of Skate.js",
-      image: "https://avatars0.githubusercontent.com/u/136556?v=3&s=80",
+      github: "136556",
       twitter: "treshugart"
     },
     tushar_mathur: {
         name: "Tushar Mathur",
         bio: "Tushar is a software developer & creator of Reactive Web Components (RWC)",
-        image: "https://avatars2.githubusercontent.com/u/194482?v=3&s=80",
+        github: "194482",
         twitter: "tusharmath"
     },
     tyler_mcginnis: {
         name: "Tyler McGinnis",
         bio: "Tyler is a Firebase Expert & Lead Instructor at DevMounta.in",
-        image: "https://avatars2.githubusercontent.com/u/2933430?v=3&s=80",
+        github: "2933430",
         twitter: "tylermcginnis33"
     },
     uri_shaked: {
         name: "Uri Shaked",
         bio: "Uri is a Angular Google Developer Expert & Salsa Dancer",
-        image : "https://avatars3.githubusercontent.com/u/892318?v=3&s=80",
+        github: "892318",
         twitter: "UriShaked"
     },
     varunkumar_nagarajan: {
@@ -782,19 +782,19 @@ module.exports = {
     ward_bell: {
         name: "Ward Bell",
         bio: "Ward is a Software Engineer in the Emeryville, California area",
-        image: "https://avatars2.githubusercontent.com/u/129061?v=3&s=80",
+        github: "129061",
         twitter: "wardbell"
     },
     william_jeffries: {
         name: "William Jeffries",
         bio: "William is a Web Developer & panelist on Polymer Podcast",
-        image: "https://avatars3.githubusercontent.com/u/4542879?v=3&s=80",
+        github: "4542879",
         twitter: "williamcodes"
     },
     wilson_page: {
         name: "Wilson Page",
         bio: "Wilson is a Front-end developer at Mozilla. He works with Firefox OS, web applications, web components, performance, and architecture.",
-        image: "https://avatars0.githubusercontent.com/u/1020551?v=3&s=80",
+        github: "1020551",
         twitter: "wilsonpage"
     },
     zeno_rocha: {
