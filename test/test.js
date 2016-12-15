@@ -16,6 +16,7 @@ describe('api/content', function() {
   before(function() {
     mock({
       'documents/articles/test-article.md': 'test-article',
+      'documents/articles/valid-author.md': 'valid-author',
       'documents/articles/has-excerpt.html.md': `
 metadata
 excerpt
@@ -51,6 +52,22 @@ markdown`,
         const result = JSON.parse(response.text);
         result.should.have.property('metadata');
         result.should.have.property('content', 'markdown');
+        done();
+      });
+  });
+
+  it('should contain author object', function(done) {
+    chai.request(server)
+      .get('/content/articles/valid-author')
+      .end(function(err, response) {
+        const header = response.header;
+        header.should.have.property('access-control-allow-origin', '*');
+        response.should.have.status(200);
+        const result = JSON.parse(response.text);
+        result.should.have.property('metadata');
+        result.metadata.should.have.property('authors');
+        result.metadata.authors.should.have.length(1);
+        result.metadata.authors[0].should.have.property('bio');
         done();
       });
   });

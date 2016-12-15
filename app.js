@@ -57,6 +57,13 @@ app.get('/content/*', function(request, response) {
     }
     data = data.replace(/([^]*<!-- Excerpt -->)/m, '').trim();
     const metadata = metadataMap[request.params[0]];
+
+    // Return full author metadata
+    if (metadata.authors) {
+      for (var author of metadata.authors)
+        Object.assign(author, authors[author.id]);
+    }
+
     response.setHeader('Content-Type', 'application/json');
     response.status(200).send({metadata: metadata, content: data});
   });
