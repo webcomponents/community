@@ -15,4 +15,5 @@ deploy:
   keyfile: client-secret.json
   project: web-components-resources
   config: app.yaml
+  version: 1
   default: true
