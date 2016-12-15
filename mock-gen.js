@@ -2,7 +2,7 @@ module.exports = [
   {
     'title': 'test-article',
     'authors': [
-      'an_author',
+      { id: 'an_author' },
     ],
     'category': 'articles',
     'relativePath': 'articles/test-article',
@@ -10,10 +10,18 @@ module.exports = [
   {
     'title': 'excerpt-article',
     'authors': [
-      'first_author',
-      'second_author',
+      { id: 'first_author' },
+      { id: 'second_author' },
     ],
     'category': 'articles',
     'relativePath': 'articles/has-excerpt',
+  },
+  {
+    'title': 'valid-author',
+    'authors': [
+      { id: 'aaron_frost' },
+    ],
+    'category': 'articles',
+    'relativePath': 'articles/valid-author',
   },
 ];

@@ -2,6 +2,7 @@
 
 let fs = require('fs');
 let docpad = require('docpad');
+let authors = require('./authors.js');
 let metadata = [];
 
 docpad.createInstance({}, function(err, docpadInstance) {
@@ -25,6 +26,22 @@ function processFiles(err, files) {
     attributes.excerpt = body;
 
     attributes.relativePath = file.attributes.relativePath.replace(/\..*/, '');
+
+    let expandedAuthors = [];
+    if (attributes.authors) {
+      for (var id of attributes.authors) {
+        let author = authors[id];
+        if (!author)
+          continue;
+        expandedAuthors.push({
+          id: id,
+          name: author.name,
+          twitter: author.twitter,
+        });
+      }
+
+      attributes.authors = expandedAuthors;
+    }
 
     metadata.push(attributes);
   }
