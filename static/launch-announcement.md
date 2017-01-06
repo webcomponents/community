@@ -1,7 +1,3 @@
-<p align="center">
-  <img alt="webcomponents.org" src="https://beta.webcomponents.org/assets/logo.svg" width="161">
-</p>
-
 Web components deliver on the power of modularization. With a growing web components community creating high quality components, we are excited to __announce the new [webcomponents.org](https://www.webcomponents.org) including a new custom element registry__.
 
 The next generation of Web Components are here, thanks to cross-browser collaboration:
