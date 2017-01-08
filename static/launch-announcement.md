@@ -1,4 +1,4 @@
-Web components deliver on the power of modularization. With a growing web components community creating high quality components, we are excited to __announce the new [webcomponents.org](https://www.webcomponents.org) including a new custom element registry__.
+With a growing web components community creating high quality components, we are excited to __announce the new [webcomponents.org](https://www.webcomponents.org) including a new custom element registry__.
 
 The next generation of Web Components are here, thanks to cross-browser collaboration:
  * Chrome supports [Shadow DOM v1 in Chrome 53](https://www.chromestatus.com/feature/4667415417847808) and [Custom Elements v1 in Chrome 54](https://www.chromestatus.com/feature/4696261944934400).
@@ -7,6 +7,8 @@ The next generation of Web Components are here, thanks to cross-browser collabor
  * Edge has placed [Shadow DOM as high priority](https://developer.microsoft.com/en-us/microsoft-edge/platform/status/shadowdom/) and [Custom Elements as medium priority](https://developer.microsoft.com/en-us/microsoft-edge/platform/status/customelements/) on their roadmap.
 
 [Polyfills are available](https://www.webcomponents.org/polyfills) for all major browsers with several libraries building on top of these including [Polymer](https://www.polymer-project.org/1.0/), [SkateJS](https://github.com/skatejs/skatejs) and [X-Tag](https://x-tag.github.io/).
+
+The new custom element registry makes it easy to find web components built by other developers to use in your application, and share open-source web components you’ve built with the community.
 
 # Features
  * __Live, editable inline demos__ - Element pages can include inline demos that let you see and play with elements before you use them.
