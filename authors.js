@@ -703,10 +703,10 @@ module.exports = {
     },
     steven_lambert: {
         name: "Steven Lambert",
-        bio: "Steven Lambert is a lead web developer and accessibility advocate at FamilySearch.org. He has over 7 years of industry experience and specializes in design systems, performance, and accessibility. On the side, he is a hobbyist game developer and freelance web developer."
+        bio: "Steven Lambert is a lead web developer and accessibility advocate at FamilySearch.org. He has over 7 years of industry experience and specializes in design systems, performance, and accessibility. On the side, he is a hobbyist game developer and freelance web developer.",
         github: "2433219",
         twitter: "StevenKLambert"
-    }
+    },
     soledad_penades: {
         name: "Soledad Penades",
         bio: "Soledad is a Senior Apps Developer working on improving the Web Platform at Mozilla.",
