@@ -1,3 +1,9 @@
+<p align="center">
+  <a href="../assets/images/launch-inline-demo-small.gif" target="blank">
+    <img src="../assets/images/launch-inline-demo-small.gif" alt="Live editable demos" width="600">
+  </a>
+</p>
+
 With a growing web components community creating high quality components, we are excited to __announce the new [webcomponents.org](https://www.webcomponents.org) including a new custom element registry__.
 
 The next generation of Web Components are here, thanks to cross-browser collaboration:
