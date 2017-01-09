@@ -12,6 +12,9 @@ The new custom element registry makes it easy to find web components built by ot
 
 # Features
  * __Live, editable inline demos__ - Element pages can include inline demos that let you see and play with elements before you use them.
+<a href="assets/images/launch-inline-demo-small.gif" target="blank">
+  <img src="../assets/images/launch-inline-demo-small.gif" alt="Live editable demos" width="600">
+</a>
  * __API documentation__ - Detailed documentation on attributes, properties and methods on custom elements are shown where possible.
  * __Latest and greatest__ - The element registry automatically pulls new tagged releases from GitHub as they're published, ensuring documentation is always up to date.
  * __Collections__ - Collections enable the community to organize elements to help you discover more elements.
