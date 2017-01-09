@@ -1,6 +1,6 @@
 <p align="center">
-  <a href="../assets/images/launch-inline-demo-small.gif" target="blank">
-    <img src="../assets/images/launch-inline-demo-small.gif" alt="Live editable demos" width="600">
+  <a href="https://web-components-resources.appspot.com/assets/images/launch-main.gif" target="blank">
+    <img src="https://web-components-resources.appspot.com/assets/images/launch-main.gif" alt="webcomponents.org">
   </a>
 </p>
 
@@ -20,8 +20,8 @@ The new custom element registry makes it easy to find web components built by ot
  * __Live, editable inline demos__ - Element pages can include inline demos that let you see and play with elements before you use them.
 
 <p align="center">
-  <a href="../assets/images/launch-inline-demo-small.gif" target="blank">
-    <img src="../assets/images/launch-inline-demo-small.gif" alt="Live editable demos" width="600">
+  <a href="https://web-components-resources.appspot.com/assets/images/launch-inline-demo-small.gif" target="blank">
+    <img src="https://web-components-resources.appspot.com/assets/images/launch-inline-demo-small.gif" alt="Live editable demos" width="600">
   </a>
 </p>
 
@@ -32,18 +32,11 @@ The new custom element registry makes it easy to find web components built by ot
 
 # Element author features
  * [__Element preview__](https://beta.webcomponents.org/preview) allows you to see how an element will appear without publishing it. Works with any pull request, branch, or commit on GitHub.
-
-<p align="center">
-  <a href="../assets/images/launch-preview-small.gif" target="blank">
-    <img src="../assets/images/launch-preview-small.gif" alt="Preview feature" width="600">
-  </a>
-</p>
-
  * [__GitHub preview integration__](https://beta.webcomponents.org/preview-integration) assists development by allowing you to see the effects of a pull request on demos & documentation.
 
 <p align="center">
-  <a href="../assets/images/launch-preview-integration.png" target="blank">
-    <img src="../assets/images/launch-preview-integration.png" alt="GitHub preview integration feature" width="600">
+  <a href="https://web-components-resources.appspot.com/assets/images/launch-preview-integration.png" target="blank">
+    <img src="https://web-components-resources.appspot.com/assets/images/launch-preview-integration.png" alt="GitHub preview integration feature" width="500">
   </a>
 </p>
 
