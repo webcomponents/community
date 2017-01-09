@@ -13,7 +13,7 @@ The new custom element registry makes it easy to find web components built by ot
 # Features
  * __Live, editable inline demos__ - Element pages can include inline demos that let you see and play with elements before you use them.
 
-<a href="../assets/images/launch-inline-demo-small.gif" target="blank">
+<a align="center" href="../assets/images/launch-inline-demo-small.gif" target="blank">
   <img src="../assets/images/launch-inline-demo-small.gif" alt="Live editable demos" width="600">
 </a>
 
@@ -25,13 +25,13 @@ The new custom element registry makes it easy to find web components built by ot
 # Element author features
  * [__Element preview__](https://beta.webcomponents.org/preview) allows you to see how an element will appear without publishing it. Works with any pull request, branch, or commit on GitHub.
 
-<a href="../assets/images/launch-preview-small.gif" target="blank">
+<a align="center" href="../assets/images/launch-preview-small.gif" target="blank">
   <img src="../assets/images/launch-preview-small.gif" alt="Preview feature" width="600">
 </a>
 
  * [__GitHub preview integration__](https://beta.webcomponents.org/preview-integration) assists development by allowing you to see the effects of a pull request on demos & documentation.
 
-<a href="../assets/images/launch-preview-integration.png" target="blank">
+<a align="center" href="../assets/images/launch-preview-integration.png" target="blank">
   <img src="../assets/images/launch-preview-integration.png" alt="GitHub preview integration feature" width="600">
 </a>
 
