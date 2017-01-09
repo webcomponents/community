@@ -1,3 +1,9 @@
+<p align="center">
+  <a href="../assets/images/launch-inline-demo-small.gif" target="blank">
+    <img src="../assets/images/launch-inline-demo-small.gif" alt="Live editable demos" width="600">
+  </a>
+</p>
+
 With a growing web components community creating high quality components, we are excited to __announce the new [webcomponents.org](https://www.webcomponents.org) including a new custom element registry__.
 
 The next generation of Web Components are here, thanks to cross-browser collaboration:
@@ -12,6 +18,13 @@ The new custom element registry makes it easy to find web components built by ot
 
 # Features
  * __Live, editable inline demos__ - Element pages can include inline demos that let you see and play with elements before you use them.
+
+<p align="center">
+  <a href="../assets/images/launch-inline-demo-small.gif" target="blank">
+    <img src="../assets/images/launch-inline-demo-small.gif" alt="Live editable demos" width="600">
+  </a>
+</p>
+
  * __API documentation__ - Detailed documentation on attributes, properties and methods on custom elements are shown where possible.
  * __Latest and greatest__ - The element registry automatically pulls new tagged releases from GitHub as they're published, ensuring documentation is always up to date.
  * __Collections__ - Collections enable the community to organize elements to help you discover more elements.
@@ -19,7 +32,20 @@ The new custom element registry makes it easy to find web components built by ot
 
 # Element author features
  * [__Element preview__](https://beta.webcomponents.org/preview) allows you to see how an element will appear without publishing it. Works with any pull request, branch, or commit on GitHub.
+
+<p align="center">
+  <a href="../assets/images/launch-preview-small.gif" target="blank">
+    <img src="../assets/images/launch-preview-small.gif" alt="Preview feature" width="600">
+  </a>
+</p>
+
  * [__GitHub preview integration__](https://beta.webcomponents.org/preview-integration) assists development by allowing you to see the effects of a pull request on demos & documentation.
+
+<p align="center">
+  <a href="../assets/images/launch-preview-integration.png" target="blank">
+    <img src="../assets/images/launch-preview-integration.png" alt="GitHub preview integration feature" width="600">
+  </a>
+</p>
 
 # Getting started
  * New to web components? [Read our introduction to learn more.](https://www.webcomponents.org/introduction)
