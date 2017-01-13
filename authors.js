@@ -665,6 +665,12 @@ module.exports = {
         gravatar:"e1709218ec4ecc612e5c9a6d5d59e68f",
         twitter: "EisenbergEffect"
     },
+    sam_li: {
+        name: "Sam Li",
+        bio: "Sam is a Software Engineer on the Google Chrome team",
+        github: "787668",
+        twitter: "samdotli"
+    },
     scott_miles: {
         name: "Scott Miles",
         bio: "Scott is a Software engineer in the Polymer team. He currently lives in Napa, CA.",
