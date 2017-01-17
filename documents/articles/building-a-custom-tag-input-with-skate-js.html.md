@@ -1,5 +1,6 @@
 ---
 title: Building a custom tag input with Skate.js
+authors: [hector_zarco]
 date: 2017-1-4
 original_date: 2017-1-4
 image: building-a-custom-tag-input-with-skate-js.png
