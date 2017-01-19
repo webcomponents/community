@@ -60,7 +60,7 @@ app.get('/content/*', function(request, response) {
 
     // Return full author metadata
     if (metadata.authors) {
-      for (var author of metadata.authors)
+      for (let author of metadata.authors)
         Object.assign(author, authors[author.id]);
     }
 
@@ -96,6 +96,24 @@ app.get('/resources', function(request, response) {
   const offset = parseInt(request.query.offset) || 0;
   const limit = parseInt(request.query.limit) || 10;
   response.status(200).send(createResult(metadata.all, offset, limit));
+});
+
+app.get('/resources/author/:author', function(request, response) {
+  response.header('Access-Control-Allow-Origin', '*');
+  const offset = parseInt(request.query.offset) || 0;
+  const limit = parseInt(request.query.limit) || 10;
+
+  let filtered = metadata.all.filter(function(item) {
+    if (!item.authors)
+      return false;
+    for (let author of item.authors) {
+      if (author.id == request.params.author)
+        return true;
+    }
+    return false;
+  });
+  response.status(200).send(
+    createResult(filtered, offset, limit));
 });
 
 app.get('/resources/:bucket', function(request, response) {

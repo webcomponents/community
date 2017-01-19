@@ -143,4 +143,17 @@ describe('api/resources', function() {
         done();
       });
   });
+
+  it('should return filtered list by author', function(done) {
+    chai.request(server)
+      .get('/resources/author/aaron_frost')
+      .end(function(err, response) {
+        const header = response.header;
+        header.should.have.property('access-control-allow-origin', '*');
+        response.should.have.status(200);
+        response.should.be.json;
+        JSON.parse(response.text).should.have.property('count', 1);
+        done();
+      });
+  });
 });
