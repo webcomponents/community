@@ -9,4 +9,4 @@ layout: single
 tags: ['Custom Elements']
 ---
 
-Applications built from web components can be easy to understand, grow, and refactor, because they are easy to break up into modular and declarative pieces. They work well in the browser, but I believe there is far greater potential as they begin to spill out of the browser, into the desktop, server, and even embedded applications. Let us explore.
+Applications built from web components can be easy to understand, grow, and refactor, because they are easy to break up into modular and declarative pieces. They work well in the browser, but I believe there is far greater potential as they begin to spill out of the browser, into the desktop, server, and even embedded applications.
