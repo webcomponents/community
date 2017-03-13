@@ -1,7 +1,7 @@
 ---
 title: Universal Web Components
 authors: [jordan_last]
-date: 2017-03-06
+date: 2017-03-13
 original_date: 2017-03-06
 link: https://scotch.io/bar-talk/universal-web-components
 category: articles
