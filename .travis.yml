@@ -4,10 +4,8 @@ node_js:
 cache:
   directories:
     - node_modules
-before_install:
-- openssl aes-256-cbc -K $encrypted_b0dab8baefe0_key -iv $encrypted_b0dab8baefe0_iv
-  -in client-secret.json.enc -out client-secret.json -d
 before_deploy:
+  - openssl aes-256-cbc -K $encrypted_b0dab8baefe0_key -iv $encrypted_b0dab8baefe0_iv -in client-secret.json.enc -out client-secret.json -d
   - node gen.js
 deploy:
   provider: gae
