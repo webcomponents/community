@@ -293,6 +293,12 @@ module.exports = {
         github: "189541",
         twitter: "filipearaujo"
     },
+    gerwin_sturm: {
+        name: "Gerwin Sturm",
+        bio: "Gerwin is a Google Developer Expert from Vienna, Austria.",
+        github: "809528",
+        twitter: "scarygami"
+    },
     gil_fink: {
       name: "Gil Fink",
       bio: "Gil is a web developer and the founder of sparXys",
