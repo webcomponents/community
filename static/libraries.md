@@ -19,3 +19,5 @@ When choosing a web component library, make sure it has a large enough featurese
  * [Skate.js](https://skatejs.gitbooks.io/skatejs/content/) is a library built on top of the W3C web component specs that enables you to write functional and performant web components with a very small footprint. Skate is Inherently cross-framework compatible. For example, it works seamlessly with - and complements - React and other frameworks.
 
  * [X-Tag](http://x-tag.github.io/) is a Microsoft supported, open source, JavaScript library that wraps the W3C standard Web Components family of APIs to provide a compact, feature-rich interface for rapid component development. While X-Tag offers feature hooks for all Web Component APIs (Custom Elements, Shadow DOM, Templates, and HTML Imports), it only requires Custom Element support to operate. In the absence of native Custom Element support, X-Tag uses a set of polyfills shared with Google's Polymer framework.
+ 
+ * [Slim.js](http://slimjs.com) Slim is an elegant & fast library for development of native web-components, based on the DOM Elements inheritance mechanism, that enables creation of poerwful components.
