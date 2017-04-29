@@ -98,7 +98,7 @@ To support this kind of behavior the event dispatching in the browser has to be 
  * No live `NodeLists`. All node lists are snapshotted upon read.
  * `document`, window`, document.body`, document.head` and others are non configurable and cannot be overridden. We are trying to make these work as seamlessly as possible but there will doubtlessly be cases where there will be problems; for those cases you can use wrapand unwrap to get unblocked.
  * Cross window/frame access is not implemented.
- * CSS `:host()` rules can only have (at most) one level of nested parentheses in their argument selectors. For example, `:host(.zot)` and `:host(.zot:not(.bar)` both work, but `:host(.zot:not(.bar:nth-child(2)))` does not.
+ * CSS `:host()` rules can only have (at most) one level of nested parentheses in their argument selectors. For example, `:host(.zot)` and `:host(.zot:not(.bar))` both work, but `:host(.zot:not(.bar:nth-child(2)))` does not.
 
 # Custom Elements polyfill
 The Custom Elements polyfill provides support for v0 of the Custom Elements spec. A polyfill for v1 is in progress at https://github.com/webcomponents/custom-elements. 
