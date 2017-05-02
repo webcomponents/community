@@ -4,7 +4,8 @@ The WebComponents.org Resources section is a place to showcase useful tools and 
 
 Web Components is a set of specs that introduce powerful new capabilities to the web platform. Before getting started with your first custom element, it will be helpful to understand the scope of these new features. The [Introduction](/introduction) section contains an overview of these APIs. The [Community](/community) section is also a great way to catch up on the latest goings-on in the Web Components world. We’d also recommend starting out by reading the Getting Started sections of:
  * [Polymer's documentation;](https://www.polymer-project.org/)
- * [SkateJS's documentation.](http://skate.js.org/)
+ * [Slim.js's documentation.](http://slim.js.org/)
+ * [Skate.js's documentation.](https://skatejs.gitbooks.io/skatejs/content/)
  * [X-Tag's documentation.](http://x-tag.github.io/docs)
 
 These will give you an idea on how these libraries for building web components work and what might be best for you.
