@@ -10,10 +10,11 @@ A roundup of what's new in the web components world in the short few months sinc
 <!-- Excerpt -->
 
 In the short few months since webcomponents.org has launched, we have seen:
- * more than 850 elements have been added
+ * almost 900 elements have been added
  * reached an incredible milestone of 1 million page views each month
  * a new web components library, [slim.js](https://github.com/eavichay/slim.js)
  * [Safari 10.1 and iOS Safari 10.3](http://caniuse.com/#feat=custom-elementsv1) shipped Custom Elements v1
+ * stable v1.0.0 release of [webcomponents.js polyfills](https://github.com/webcomponents/webcomponentsjs)
 
 ## webcomponents.org changes
 
