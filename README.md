@@ -5,7 +5,7 @@
 
 # Adding or modifying content
  1. Decide what the content type is:
-  * Evergreen pages such as Polyfills, Specifications should me modified in [/static]
+  * Evergreen pages such as Polyfills, Specifications should be modified in [/static]
   * Posts such as articles/podcasts/presentations should be added to [/documents]
  1. Send a PR with the changes.
  1. Done! Once it's merged, the site will update with the latest content.
