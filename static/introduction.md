@@ -95,5 +95,6 @@ Many libraries already exist that make it easier to build web components. To div
  * [Bosonic](https://bosonic.github.io/) is a collection of components designed to meet the everyday needs of web developers.
  * [Polymer](https://www.polymer-project.org) provides a set of features for creating custom elements.
  * [SkateJS](https://github.com/skatejs/skatejs) is a JavaScript library for writing web components with a small footprint.
+ * [Slim.js](http://slimjs.com) is an opensource lightweight web component library that provides data-binding and extended capabilities for components, using es6 native class inheritance.
+ * [Stencil](https://stenciljs.com/) is an opensource compiler that generates standards-compliant web components.
  * [X-Tag](https://x-tag.github.io/) is an open source JavaScript library that provides an interface for component development.
- * [Slim.js](http://slimjs.com) Slim.js is an opensource lightweight web component library that provides data-binding and extended capabilities for components, using es6 native class inheritance.
