@@ -4,16 +4,19 @@ node_js:
 cache:
   directories:
   - node_modules
+  - "$HOME/google-cloud-sdk/"
+env:
+# Make sure gcloud command is on our PATH and the App Engine SDK is in the Python path
+- GAE_PYTHONPATH=${HOME}/.cache/google_appengine PATH=$PATH:${HOME}/google-cloud-sdk/bin CLOUDSDK_CORE_DISABLE_PROMPTS=1
 before_deploy:
-- node gen.js
-deploy:
-  provider: gae
-  skip_cleanup: true
-  keyfile: client-secret.json
-  project: web-components-resources
-  config: app.yaml
-  version: 1
-  default: true
-before_install:
+# If the SDK is not already cached, download it and unpack it
+- if [ ! -d ${HOME}/google-cloud-sdk ]; then
+     curl https://sdk.cloud.google.com | bash;
+  fi
 - openssl aes-256-cbc -K $encrypted_5ae6bda58156_key -iv $encrypted_5ae6bda58156_iv
   -in client-secret.json.enc -out client-secret.json -d
+# Here we use the decrypted service account credentials to authenticate the command line tool
+- gcloud auth activate-service-account --key-file client-secret.json
+deploy:
+- gcloud config set project web-components-resources
+- gcloud -q preview app deploy app.yaml --promote
