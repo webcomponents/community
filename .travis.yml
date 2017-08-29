@@ -8,7 +8,7 @@ before_install:
 - openssl aes-256-cbc -K $encrypted_5ae6bda58156_key -iv $encrypted_5ae6bda58156_iv
   -in client-secret.json.enc -out client-secret.json -d
 script:
-- echo "No Script to run"
+- node gen.js
 deploy:
   provider: gae
   skip_cleanup: true
