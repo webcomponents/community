@@ -4,16 +4,14 @@ node_js:
 cache:
   directories:
   - node_modules
-before_deploy:
-- node gen.js
+before_install:
+- openssl aes-256-cbc -K $encrypted_5ae6bda58156_key -iv $encrypted_5ae6bda58156_iv
+  -in client-secret.json.enc -out client-secret.json -d
+script:
+- echo "No Script to run"
 deploy:
   provider: gae
   skip_cleanup: true
   keyfile: client-secret.json
   project: web-components-resources
-  config: app.yaml
-  version: 1
   default: true
-before_install:
-- openssl aes-256-cbc -K $encrypted_5ae6bda58156_key -iv $encrypted_5ae6bda58156_iv
-  -in client-secret.json.enc -out client-secret.json -d
