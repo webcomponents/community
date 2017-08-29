@@ -3,10 +3,9 @@ node_js:
 - '6'
 cache:
   directories:
-    - node_modules
+  - node_modules
 before_deploy:
-  - openssl aes-256-cbc -K $encrypted_b0dab8baefe0_key -iv $encrypted_b0dab8baefe0_iv -in client-secret.json.enc -out client-secret.json -d
-  - node gen.js
+- node gen.js
 deploy:
   provider: gae
   skip_cleanup: true
@@ -15,3 +14,6 @@ deploy:
   config: app.yaml
   version: 1
   default: true
+before_install:
+- openssl aes-256-cbc -K $encrypted_5ae6bda58156_key -iv $encrypted_5ae6bda58156_iv
+  -in client-secret.json.enc -out client-secret.json -d
