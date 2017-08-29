@@ -8,7 +8,7 @@ cache:
 env:
 # Make sure gcloud command is on our PATH and the App Engine SDK is in the Python path
 - GAE_PYTHONPATH=${HOME}/.cache/google_appengine PATH=$PATH:${HOME}/google-cloud-sdk/bin CLOUDSDK_CORE_DISABLE_PROMPTS=1
-before_deploy:
+before_install:
 # If the SDK is not already cached, download it and unpack it
 - if [ ! -d ${HOME}/google-cloud-sdk ]; then
      curl https://sdk.cloud.google.com | bash;
@@ -17,6 +17,6 @@ before_deploy:
   -in client-secret.json.enc -out client-secret.json -d
 # Here we use the decrypted service account credentials to authenticate the command line tool
 - gcloud auth activate-service-account --key-file client-secret.json
-deploy:
+script:
 - gcloud config set project web-components-resources
 - gcloud -q preview app deploy app.yaml --promote
