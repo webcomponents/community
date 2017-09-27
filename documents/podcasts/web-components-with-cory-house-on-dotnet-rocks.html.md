@@ -6,7 +6,6 @@ date: 2015-02-04
 original_date: 2015-02-04
 link: "http://www.dotnetrocks.com/default.aspx?showNum=1096"
 category: podcasts
-layout: single
 ---
 
 Carl and Richard talk to Cory House about the web component specification and what that will look like in your modern web development. As Cory explains, the key idea behind web components is to provide a framework for Javascript library extensibility that doesn't force you to own the library yourself.
