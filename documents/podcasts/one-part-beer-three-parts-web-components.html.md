@@ -1,7 +1,7 @@
 ---
 title: "One part beer, three parts web components. Add lemon to taste"
 authors: [trey_shugart, jem_young, ryan_anklam, brian_holt, stacy_london]
-podcast: "Front End Happy HOur"
+podcast: "Front End Happy Hour"
 date: 2017-05-07
 original_date: 2017-05-07
 link: "http://frontendhappyhour.com/episodes/one-part-beer-three-parts-web-components-add-lemon-to-taste/"

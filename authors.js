@@ -11,7 +11,7 @@ module.exports = {
         github: "1240073",
         twitter: "onishiweb"
     },
-    alex_Sexton: {
+    alex_sexton: {
         name: "Alex Sexton",
         bio: "Alex is a Front-end Infrastructure at Stripe",
         github: "96554",
@@ -540,7 +540,7 @@ module.exports = {
     },
     lars_knudsen: {
         name: "Lars Knudsen",
-        bio: "Lars is CEO at IT Knows ApS",
+        bio: "Lars is the founder of IT Knows and a web platform and hardware connectivity evangelist",
         github: "1014678",
         twitter: "denladeside"
     },
