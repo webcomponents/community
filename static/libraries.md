@@ -16,6 +16,8 @@ When choosing a web component library, make sure it has a large enough featurese
 
  * [Polymer](https://www.polymer-project.org/) is a web component library built by Google, with a simple element creation API. Polymer offers one- and two-way data binding into element templates, and provides shims for better cross-browser performance.
 
- * [Skate.js](http://skate.js.org/) is a library built on top of the W3C web component specs that enables you to write functional and performant web components with a very small footprint. Skate is Inherently cross-framework compatible. For example, it works seamlessly with - and complements - React and other frameworks.
+ * [Skate.js](https://skatejs.gitbooks.io/skatejs/content/) is a library built on top of the W3C web component specs that enables you to write functional and performant web components with a very small footprint. Skate is Inherently cross-framework compatible. For example, it works seamlessly with - and complements - React and other frameworks.
 
  * [X-Tag](http://x-tag.github.io/) is a Microsoft supported, open source, JavaScript library that wraps the W3C standard Web Components family of APIs to provide a compact, feature-rich interface for rapid component development. While X-Tag offers feature hooks for all Web Component APIs (Custom Elements, Shadow DOM, Templates, and HTML Imports), it only requires Custom Element support to operate. In the absence of native Custom Element support, X-Tag uses a set of polyfills shared with Google's Polymer framework.
+ 
+ * [Slim.js](http://slimjs.com) Slim.js is a lightweight web component library that provides extended capabilities for components, such as data binding, using es6 native class inheritance. This library is focused for providing the developer the ability to write robust and native web components without the hassle of dependencies and an overhead of a framework.

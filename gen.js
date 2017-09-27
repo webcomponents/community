@@ -29,7 +29,7 @@ function processFiles(err, files) {
 
     let expandedAuthors = [];
     if (attributes.authors) {
-      for (var id of attributes.authors) {
+      for (let id of attributes.authors) {
         let author = authors[id];
         if (!author)
           continue;

@@ -317,6 +317,12 @@ module.exports = {
         github: "622227",
         twitter: "FredKSchott"
     },
+    gerwin_sturm: {
+        name: "Gerwin Sturm",
+        bio: "Gerwin is a Google Developer Expert from Vienna, Austria.",
+        github: "809528",
+        twitter: "scarygami"
+    },
     gil_fink: {
       name: "Gil Fink",
       bio: "Gil is a web developer and the founder of sparXys",
@@ -334,6 +340,11 @@ module.exports = {
         bio: "Guy is a JavaScript developer and open source contributor currently exploring browser package management with http://jspm.io ",
         github: "598730",
         twitter: "guybedford"
+    },
+    hector_zarco: {
+        name: "Hector Zarco",
+        github: "1194982",
+        twitter: "zzarcon"
     },
     hidde_de_vries: {
         name: "Hidde de Vries",
