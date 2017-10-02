@@ -6,7 +6,6 @@ date: 2015-09-18
 original_date: 2015-09-18
 link: http://thewebplatform.libsyn.com/61-the-return-of-bosonic
 category: podcasts
-layout: single
 ---
 
 Raphaël Rougeron, one of the Web Components pioneers, along with his team created the Bosonic Project some while back. It was a very different approach to working with Web Components than x-tag and Polymer and it involved a required build step to create Web Components as close to specs as possible with minimal abstractions at runtime.

@@ -11,6 +11,12 @@ module.exports = {
         github: "1240073",
         twitter: "onishiweb"
     },
+    alex_sexton: {
+        name: "Alex Sexton",
+        bio: "Alex is a Front-end Infrastructure at Stripe",
+        github: "96554",
+        twitter: "SlexAxton"
+    },
     amal_hussein: {
         name: "Amal Hussein",
         bio: "Amal Hussein is a software developer in Boston, MA & a panelist on The Web Platform Podcast",
@@ -112,6 +118,18 @@ module.exports = {
         bio: "Bill is a Senior UI Engineer at CrowdStrike who loves to build great applications with Ember.js.",
         github: "17178",
         twitter: "pixelhandler"
+    },
+    ben_lesh: {
+        name: "Ben Lesh",
+        bio: "Ben is a Software engineer at Google, a RxJS core team member, and moderndotweb podcast penelist.",
+        github: "1540597",
+        twitter: "BenLesh"
+    },
+    brian_holt: {
+      name: "Brian Holt",
+      bio: "Brian is a staff engineer at LinkedIn and a teacher for Frontend Masters",
+      github: "999523",
+      twitter: "holtbt"
     },
     bruce_lawson: {
         name: "Bruce Lawson",
@@ -293,6 +311,12 @@ module.exports = {
         github: "189541",
         twitter: "filipearaujo"
     },
+    fred_schott: {
+        name: "Fred Schott",
+        bio: "Fred is an Engineer at Google",
+        github: "622227",
+        twitter: "FredKSchott"
+    },
     gerwin_sturm: {
         name: "Gerwin Sturm",
         bio: "Gerwin is a Google Developer Expert from Vienna, Austria.",
@@ -369,6 +393,12 @@ module.exports = {
       bio: "Jeffrey a member of Google's Open Web Platform Developer Relations team",
       github: "1749548",
       twitter: "jeffposnick"
+    },
+    jem_young: {
+        name: "Jem Young",
+        bio: "Jem is a Senior Software Engineer at Netflix and a panelist on @FrontendHH",
+        github: "984983",
+        twitter: "JemYoung"
     },
     jen_simmons: {
         name: "Jen Simmons",
@@ -460,6 +490,12 @@ module.exports = {
       github: "2549335",
       twitter: "jcmmit"
     },
+    justin_willis: {
+        name: "Justin Willis",
+        bio: "Justin is a developer at Ionic",
+        github: "8823093",
+        twitter: "justinwillis96"
+    },
     kaelig: {
         name: "Kaelig Deloumeau-Prigent",
         bio: "Kaelig is a french blogger, author and front-end web developer working in London at FT Labs. Previously, he worked on the responsive sites of the BBC News and the Guardian.",
@@ -478,6 +514,12 @@ module.exports = {
         github: "1500684",
         twitter: "kentcdodds"
     },
+    kenneth_christiansen: {
+        name: "Kenneth Christiansen",
+        bio: "Kenneth is a Web Platform hacker at Intel",
+        github: "1101339",
+        twitter: "kennethrohde"
+    },
     kevin_gleason: {
         name: "Kevin Gleason",
         bio: "Kevin is an Embedded Systems and Internet of Things Intern at Pubnub",
@@ -489,6 +531,18 @@ module.exports = {
         bio: "Kevin is a Senior Engineer on the Google Polymer team",
         github: "1354932",
         twitter: "kevinpschaaf"
+    },
+    kito_mann: {
+        name: "Kito Mann",
+        bio: "Kito is a Principal Consultant at Virtua",
+        github: "3187538",
+        twitter: "kito99"
+    },
+    lars_knudsen: {
+        name: "Lars Knudsen",
+        bio: "Lars is the founder of IT Knows and a web platform and hardware connectivity evangelist",
+        github: "1014678",
+        twitter: "denladeside"
     },
     lea_alcantara: {
         name: "Lea Alcantara",
@@ -580,6 +634,12 @@ module.exports = {
         gravatar: "255122f396049d1c7fb264cfa6ec584c",
         twitter: "ModusSchwartz"
     },
+    mikeal_rogers: {
+        name: "Mikeal Rogers",
+        bio: "Mikeal is creator of NodeConf and request",
+        github: "579",
+        twitter: "Mikeal"
+    },
     monica_dinculescu: {
         name: "Monica Dinculescu",
         bio: "Monica is a Software Engineer working on Polymer and Chrome for Google",
@@ -646,6 +706,12 @@ module.exports = {
         github: "1043291",
         twitter: "morewry"
     },
+    rachel_white: {
+        name: "Rachel White",
+        bio: "Rachel is a tech evangelist at Microsoft",
+        github: "228230",
+        twitter: "ohhoe"
+    },
     raphael_rougeron: {
         name: "Raphaël Rougeron",
         bio: "Raphael is creator of The Bosonic Project, entrepreneur, and software engineer.",
@@ -664,6 +730,12 @@ module.exports = {
         github: "1779253",
         twitter: "richcampbell"
     },
+    rob_bearman: {
+        name: "Rob Bearman",
+        bio: "Rob is co-founder of Component Kitchen & Elix",
+        github: "1823198",
+        twitter: "robbearman"
+    },
     rob_dodson: {
         name: "Rob Dodson",
         bio: "Rob is a Developer Advocate on the Google Chrome team. He is currently helping to educate developers about web components and Polymer. Though he's originally from the South, these days he divides his time between Mountain View and San Francisco.",
@@ -675,6 +747,12 @@ module.exports = {
         bio: "Rob is the creator of Caliburn.Micro & Durandal. He is a former Angular 2.0 team member. Currently Rob is building a new tech startup, Durandal Inc., whose first product is Aurelia.",
         gravatar:"e1709218ec4ecc612e5c9a6d5d59e68f",
         twitter: "EisenbergEffect"
+    },
+    ryan_anklam:{
+        name: 'Ryan Anklam',
+        bio: 'Ryan is a Senior UI Engineer at Netflix.',
+        github: '392624',
+        twitter: 'bittersweetryan'
     },
     sam_li: {
         name: "Sam Li",
@@ -705,6 +783,12 @@ module.exports = {
         bio: "Sébastien is a Software Engineer at the Guardian, working predominently on editorial tools. He currently lives in London, UK.",
         github: "36964",
         twitter: "theefer"
+    },
+    stacy_london: {
+      name: "Stacy London",
+      bio: "Stacy is a front-end engineer at Atlassian Bitbucket and a panelist on Frontend Happy Hour podcast",
+      github: "1217129",
+      twitter: "stacylondoner"
     },
     steve_faulkner: {
         name: "Steve Faulkner",
