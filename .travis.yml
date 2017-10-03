@@ -5,8 +5,8 @@ cache:
   directories:
   - node_modules
 before_install:
-- openssl aes-256-cbc -K $encrypted_5ae6bda58156_key -iv $encrypted_5ae6bda58156_iv
-  -in client-secret.json.enc -out client-secret.json -d
+-  'if [ "$TRAVIS_PULL_REQUEST" == "false" ]; then openssl aes-256-cbc -K $encrypted_5ae6bda58156_key -iv $encrypted_5ae6bda58156_iv
+  -in client-secret.json.enc -out client-secret.json -d; fi'
 script:
 - node gen.js
 deploy:
