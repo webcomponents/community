@@ -21,7 +21,7 @@ The [HTML template element specification](https://html.spec.whatwg.org/multipage
 # How do I use a web component?
 The components on this site provide new HTML elements that you can use in your web pages and web applications.
 
-Using a custom element is as simple as importing it, and using the new tags in an HTML document. For example, to use the [Emoji Rain element](https://beta.webcomponents.org/element/notwaldorf/emoji-rain):
+Using a custom element is as simple as importing it, and using the new tags in an HTML document. For example, to use the [Emoji Rain element](https://webcomponents.org/element/notwaldorf/emoji-rain):
 
 ```html
 <link rel="import" href="../emoji-rain/emoji-rain.html">
@@ -31,7 +31,7 @@ Using a custom element is as simple as importing it, and using the new tags in a
 
 There are a number of ways to install custom elements. When you find an element you want to use, look at its README for the commands to install it. Most elements today can be installed with Bower. Bower also handles installing the components' dependencies. For more information on Bower, see [Bower.io](https://bower.io/).
 
-For example, the [Emoji Rain README](https://beta.webcomponents.org/element/notwaldorf/emoji-rain) describes the install process with Bower:
+For example, the [Emoji Rain README](https://webcomponents.org/element/notwaldorf/emoji-rain) describes the install process with Bower:
 ```
 mkdir emoji-rain-demo && cd emoji-rain-demo
 bower install emoji-rain
