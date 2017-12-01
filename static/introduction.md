@@ -63,11 +63,11 @@ Using a custom element is no different to using a `<div>` or any other element. 
 ```html
 <script>
 // Create with javascript
-var newDrawer = document.createElement(‘app-drawer’);
+var newDrawer = document.createElement('app-drawer');
 // Add it to the page
 document.body.appendChild(newDrawer);
 // Attach event listeners
-document.querySelector(‘app-drawer’).addEventListener(‘open’, function() {...});
+document.querySelector('app-drawer').addEventListener('open', function() {...});
 </script>
 ```
 
