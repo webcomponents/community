@@ -9,7 +9,7 @@ To install the polyfills, run this command:
 npm install @webcomponents/webcomponentsjs
 ```
 There are severeal different ways of applying the polyfill [which you can read about here](https://github.com/WebComponents/webcomponentsjs#how-to-use). The easiest way to utilize webcomponents across platform is the following:
-```
+```html
 <!-- load webcomponents bundle, which includes all the necessary polyfills -->
 <script src="node_modules/@webcomponents/webcomponentsjs/webcomponents-bundle.js"></script>
 
@@ -65,7 +65,7 @@ If you plan to work with elements that need to be wrapped over and over, try pas
 
 ## Event Retargeting
 An important aspect of the shadow DOM is that events are retargeted to never expose the shadow DOM to the light DOM. For example:
-```
+```js
 var div = document.createElement('div');
 div.innerHTML = 'Click me';
 var shadow = div.createShadowRoot();
