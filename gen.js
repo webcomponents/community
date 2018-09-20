@@ -1,15 +1,12 @@
 'use strict';
 
 let fs = require('fs');
-let docpad = require('docpad');
+const DocPad = new require('docpad');
+const docpadInstance = new DocPad();
 let authors = require('./authors.js');
 let metadata = [];
 
-docpad.createInstance({}, function(err, docpadInstance) {
-  if (err)
-    return console.error(err.stack);
-  docpadInstance.parseDocumentDirectory({path: 'documents'}, processFiles);
-});
+docpadInstance.parseDocumentDirectory({path: 'documents'}, processFiles);
 
 /**
  * Process all the files that have been read.
