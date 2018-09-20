@@ -28,7 +28,7 @@ The generators help ensure an even more seamless start, helping with tasks like 
 
 Some projects also have command-line tools to help automate the scaffolding of web components and applications:
  * [Polymer CLI](https://www.polymer-project.org/3.0/docs/tools/polymer-cli) - CLI + build Polymer 3 & scaffold full applications
- & [StencilJS](https://www.stenciljs.com/) - CLI & Compiler to generate VanillaJS elements
+ * [StencilJS](https://www.stenciljs.com/) - CLI & Compiler to generate VanillaJS elements
  * [Web Component Factory](https://github.com/elmsln/wcfactory) - CLI to produce boilerplate VanillaJS, SlimJS, StencilJS, Polmer 3, LitElement
 
 # 3. Share
