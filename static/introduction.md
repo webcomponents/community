@@ -12,8 +12,8 @@ The [Custom Elements specification](https://w3c.github.io/webcomponents/spec/cus
 ## Shadow DOM
 The [shadow DOM specification](https://w3c.github.io/webcomponents/spec/shadow/) defines how to use encapsulated style and markup in web components.
 
-## HTML imports
-The [HTML imports specification](https://w3c.github.io/webcomponents/spec/imports/) defines the inclusion and reuse of HTML documents in other HTML documents.
+## ES Modules
+The [ES Modules specification](https://html.spec.whatwg.org/multipage/webappapis.html#integration-with-the-javascript-module-system) defines the inclusion and reuse of JS documents in a standards based, modular, performant way.
 
 ## HTML Template
 The [HTML template element specification](https://html.spec.whatwg.org/multipage/scripting.html#the-template-element/) defines how to declare fragments of markup that go unused at page load, but can be instantiated later on at runtime.
@@ -21,24 +21,24 @@ The [HTML template element specification](https://html.spec.whatwg.org/multipage
 # How do I use a web component?
 The components on this site provide new HTML elements that you can use in your web pages and web applications.
 
-Using a custom element is as simple as importing it, and using the new tags in an HTML document. For example, to use the [Emoji Rain element](https://webcomponents.org/element/notwaldorf/emoji-rain):
+Using a custom element is as simple as importing it, and using the new tags in an HTML document. For example, to use the [paper-button element](https://www.webcomponents.org/element/@polymer/paper-button):
 
 ```html
-<link rel="import" href="../emoji-rain/emoji-rain.html">
+<script type="module" href="node_modules/@polymer/paper-button/paper-button.js"></script>
 ...
-<emoji-rain active></emoji-rain>
+<paper-button raised class="indigo">raised</paper-button>
 ```
 
-There are a number of ways to install custom elements. When you find an element you want to use, look at its README for the commands to install it. Most elements today can be installed with Bower. Bower also handles installing the components' dependencies. For more information on Bower, see [Bower.io](https://bower.io/).
+There are a number of ways to install custom elements. When you find an element you want to use, look at its README for the commands to install it. Most elements today can be installed with NPM. NPM also handles installing the components' dependencies. For more information on NPM, see [npmjs.com](https://www.npmjs.com/).
 
-For example, the [Emoji Rain README](https://webcomponents.org/element/notwaldorf/emoji-rain) describes the install process with Bower:
+For example, the [paper-button overview](https://www.webcomponents.org/element/@polymer/paper-button) describes the install process with npm:
 ```
-mkdir emoji-rain-demo && cd emoji-rain-demo
-bower install emoji-rain
+mkdir my-new-app && cd my-new-app
+npm install --save @polymer/paper-button
 ```
 
 # How do I define a new HTML element?
-This section describes the syntax for the new cross-browser version (v1) of the Web Components specification.
+This section describes the syntax for the cross-browser version of the Web Components specification.
 
 Use JavaScript to define a new HTML element and its tag with the customElements global. Call customElements.define() with the tag name you want to create and a JavaScript class that extends the base HTMLElement.
 
@@ -47,12 +47,6 @@ For example, to define a mobile drawer panel, `<app-drawer>`:
 class AppDrawer extends HTMLElement {...}
 window.customElements.define('app-drawer', AppDrawer);
 ```
-v0 of the Custom Elements specification used document.registerElement() for this purpose:
-```js
-var XFoo = document.registerElement('x-foo');
-document.body.appendChild(new XFoo());
-```
-See this article on the [v0 Custom Elements specification](https://www.html5rocks.com/en/tutorials/webcomponents/customelements/) for more information.
 To use the new tag:
 ```html
 <app-drawer></app-drawer>
@@ -83,18 +77,9 @@ shadowRoot.innerHTML = '<h1>Hello Shadow DOM</h1>'; // Could also use appendChil
 // header.shadowRoot === shadowRoot
 // shadowRoot.host === header
 ```
-
-Version 0 of the shadow DOM specification provided a slightly different method for creating shadow DOM:
-```js
-var root = host.createShadowRoot();
-```
-See this article on [shadow DOM v0](https://www.html5rocks.com/en/tutorials/webcomponents/shadowdom/) for more information. See also [Hayato Ito's comparison of v0 and v1 of the shadow DOM specification](http://hayato.io/2016/shadowdomv1/).
-
 # Libraries for building web components
-Many libraries already exist that make it easier to build web components. To dive in and create your own components, here are some you can try out:
- * [Bosonic](https://bosonic.github.io/) is a collection of components designed to meet the everyday needs of web developers.
+Many libraries already exist that make it easier to build web components. [The libraries section](https://www.webcomponents.org/libraries) of the site has additional details but here are some you can try out:
  * [Polymer](https://www.polymer-project.org) provides a set of features for creating custom elements.
- * [SkateJS](https://github.com/skatejs/skatejs) is a JavaScript library for writing web components with a small footprint.
+ * [LitElement](https://github.com/Polymer/lit-element) uses [lit-html](https://github.com/Polymer/lit-html) to render into the element's Shadow DOM and adds API to help manage element properties and attributes.
  * [Slim.js](http://slimjs.com) is an opensource lightweight web component library that provides data-binding and extended capabilities for components, using es6 native class inheritance.
  * [Stencil](https://stenciljs.com/) is an opensource compiler that generates standards-compliant web components.
- * [X-Tag](https://x-tag.github.io/) is an open source JavaScript library that provides an interface for component development.
