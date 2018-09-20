@@ -1,2 +1,1 @@
-runtime: nodejs
-vm: true
+runtime: nodejs8
