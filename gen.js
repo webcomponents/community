@@ -1,7 +1,15 @@
+/**
+ * This script runs before deployment to generate necessary metadata for the
+ * running server. It parses docpad documents in the `documents/` directory and
+ * outputs a `content-gen.js` file. The generated file contains extracted
+ * metadata from all these documents. At runtime, the server loads the
+ * generated metadata to fulfill API requests.
+ */
+
 'use strict';
 
 let fs = require('fs');
-const DocPad = new require('docpad');
+const DocPad = require('docpad');
 const docpadInstance = new DocPad();
 let authors = require('./authors.js');
 let metadata = [];
