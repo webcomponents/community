@@ -1,11 +1,13 @@
-Web components are based on four main specifications:
+Web components is a meta-specification made possible by four other specifications:
  * The Custom Elements specification
  * The shadow DOM specification
- * The HTML imports specification
  * The HTML Template specification
+ * The ES Module specification
+
+These four specifications can be used on their own but combined allow developers to define their own tags (custom element), whose styles are encapsulated and isolated (shadow dom), that can be restamped many times (template), and have a consistent way of being integrated into applications (es module).
 
 # The Custom Elements specification
-The previous version of the Custom Elements specification, v0, was only shipped in Chromium-based browsers. It is being phased out in favour of v1. This section mostly applies to the new, cross-browser version of the Custom Elements specification (v1). See Eric Bidelman’s articles on [Custom Elements v1](https://developers.google.com/web/fundamentals/getting-started/primers/customelements#historysupport) or [Custom Elements v0](https://www.html5rocks.com/en/tutorials/webcomponents/customelements/) for full details.
+This section applies to the cross-browser version of the Custom Elements specification (v1). See Eric Bidelman’s articles on [Custom Elements v1](https://developers.google.com/web/fundamentals/getting-started/primers/customelements#historysupport).
 
 The [Custom Elements specification](https://w3c.github.io/webcomponents/spec/custom/) lays the foundation for designing and using new types of DOM elements that are fully-featured and conforming. Following the Custom Elements spec, authors can define behaviors and styles for new HTML elements.
 
@@ -13,18 +15,12 @@ The [Custom Elements specification](https://w3c.github.io/webcomponents/spec/cus
  * Customized built-ins extend existing HTML elements with custom functionality. They inherit semantics from the elements they extend. The specification for customized built-ins is still a work in progress, and at present is only supported by Chrome.
 
 ## Create a custom button as an autonomous custom element
-To create an autonomous custom element, extend HTMLElement. The Custom Elements v1 syntax is:
+To create an autonomous custom element, extend HTMLElement. The Custom Elements syntax is:
 ```html
 class AutonomousButton extends HTMLElement {
   ...
 }
 customElements.define("autonomous-button", AutonomousButton);
-```
-
-The (deprecated) Custom Elements v0 syntax is:
-```js
-var AutonomousButton = document.registerElement('autonomous-button', {prototype: Object.create(HTMLElement.prototype) });
-document.body.appendChild(new AutonomousButton());
 ```
 
 To use the element:
@@ -37,20 +33,12 @@ When the browser sees the `<autonomous-button>` tag, it constructs and renders a
 ## Create a custom button as a customized built-in
 You can extend an existing native HTML element to create a customized built-in*. 
 
-The Custom Elements v1 syntax is:
+The Custom Elements syntax is:
 ```html
 class CustomizedButton extends HTMLButtonElement {
   ...
 }
 customElements.define("customized-button", CustomizedButton, { extends: "button" });
-```
-
-The Custom Elements v0 syntax is:
-```js
-var CustomizedButton = document.registerElement('customized-button', {
-  prototype: Object.create(HTMLButtonElement.prototype),
-  extends: 'button'
-});
 ```
 
 To use the element:
@@ -64,7 +52,7 @@ By extending HTMLButtonElement instead of HTMLElement, CustomizedButton inherits
 
 
 # The shadow DOM specification
-This section is a summary of the new, cross-browser version (v1) of the shadow DOM specification. See [Eric Bidelman’s article on shadow DOM v1](https://developers.google.com/web/fundamentals/getting-started/primers/shadowdom), [Dominic Cooney’s article on shadow DOM v0](https://www.html5rocks.com/en/tutorials/webcomponents/shadowdom/), and [Hayato Ito’s summary of the differences](https://hayato.io/2016/shadowdomv1/) for full details.
+This section is a summary of the shadow DOM specification. See [Eric Bidelman’s article on shadow DOM](https://developers.google.com/web/fundamentals/getting-started/primers/shadowdom).
 
 The DOM (Document Object Model) is a representation of the structure of an html document. The DOM models a document as a tree, with elements in parent-child relationships.
 
@@ -73,21 +61,15 @@ On its own, the DOM API contains no support for encapsulation. This makes it har
 The shadow DOM API overcomes this limitation by letting you attach DOM subtrees to elements in a web document. These subtrees are encapsulated; style information inside them cannot apply to outside elements, and vice versa.
 
 ## Creating shadow DOM for a custom element
-In Shadow DOM v1, use the attachShadow() method to create shadow DOM:
+In Shadow DOM, use the attachShadow() method to create shadow DOM:
 ```js
 const header = document.createElement('header');
 const shadowRoot = header.attachShadow({mode: 'open'});
 shadowRoot.innerHTML = '<h1>Hello Shadow DOM</h1>'; 
 ```
 
-In Shadow DOM v0, use the createShadowRoot() method to create shadow DOM:
-```js
-let e = document.createElement('div');
-let shadowRoot = e.createShadowRoot();
-```
-
 ## Composition and slots
-By default, if an element has shadow DOM, the shadow tree is rendered instead of the element's children. To allow children to render, you need to add placeholders for them in your shadow tree. To do this in shadow DOM v1:
+By default, if an element has shadow DOM, the shadow tree is rendered instead of the element's children. To allow children to render, you need to add placeholders for them in your shadow tree. To do this in shadow DOM:
 
 Consider the following shadow tree for `<my-header>`:
 
@@ -111,23 +93,6 @@ The header renders as if the `<slot>` element was replaced by the children:
      <button>Menu</button>
   </header>
 </my-header>
-```
-
-To do this in shadow DOM v0, use `<content>` as a placeholder. See [Hayato Ito's cheat sheet](https://hayato.io/2016/shadowdomv1/#insertion-points-v0-vs-slots-v1) for the source of this code, and for more explanation.
-```html
-<!-- Top level HTML -->
-<my-host>
-  <my-child id=c1 class=foo></my-child>
-  <my-child id=c2></my-child>
-  <my-child id=c3></my-child>
-</my-host>
-
-<!-- <my-host>'s shadow tree -->
-<div>
-  <content id=i1 select=".foo"></content>
-  <content id=i2 select="my-child"></content>
-  <content id=i3></content>
-</div>
 ```
 
 ## Styling
@@ -154,23 +119,28 @@ To style elements with a shadow root, you can use custom properties if the eleme
 In this example, the `<div>` has a blue background, even though the div selector is less specific than the .test selector in the main document. That's because the main document selector doesn't match the `<div>` in the shadow DOM at all. On the other hand, the white text color set on the document body inherits down to `<styled-element>` and into its shadow root.
 
 
-# The HTML imports specification
-The [HTML imports specification](https://w3c.github.io/webcomponents/spec/imports/) defines the inclusion and reuse of HTML documents in other HTML documents. There are no corresponding changes to HTML imports for cross-browser specifications.
+# The ES Module specification
+The [ES Module specification](https://html.spec.whatwg.org/multipage/webappapis.html#integration-with-the-javascript-module-system) defines the inclusion and reuse of JS documents in other JS documents.
 
-HTML imports enable web components to be developed in a modular way. You can define the interface of your custom element in an HTML file which is then included with an import. Imported HTML files are merged into one file at build time.
+ES Modules enable web components to be developed in a modular way that is in alignment with other industry accepted implementations for JavaScript application development. You can define the interface of your custom element in a JS file which is then included with an `type="module"` attribute. ES Module files are merged into one file client side or can be rolled up into single packages ahead of time.
 
-Supposing an element is defined in cool-thing.html, you would import it using the following link:
+Supposing an element is defined in awesome-explosion.js, you would import it using one of the following script:
 ```html
-<link rel="import" href="/src/cool-thing.html">
-```
-
-Now you can use the cool-thing element in your own pages:
-```html
-<cool-thing>
+<script type="module" src="awesome-explosion.js"></script>
 ...
-</cool-thing>
+<script type="module">
+  import 'awesome-explosion.js';
+  ...
+  import {awesomeExplosion} from '@awesome-things/awesome-explosion';
+</script>
 ```
 
+Now you can use the awesome-explosion element in your own pages:
+```html
+<awesome-explosion>
+...
+</awesome-explosion>
+```
 
 # The HTML Template specification
 
