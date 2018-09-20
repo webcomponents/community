@@ -1,8 +1,10 @@
-Web components are based on four main specifications:
+Web components is a meta-specification made possible by four other specifications:
  * The Custom Elements specification
  * The shadow DOM specification
- * The ES Module specification
  * The HTML Template specification
+ * The ES Module specification
+
+These four specifications can be used on their own but combined allow developers to define their own tags (custom element), whose styles are encapsulated and isolated (shadow dom), that can be restamped many times (template), and have a consistent way of being integrated into applications (es module).
 
 # The Custom Elements specification
 This section applies to the cross-browser version of the Custom Elements specification (v1). See Eric Bidelman’s articles on [Custom Elements v1](https://developers.google.com/web/fundamentals/getting-started/primers/customelements#historysupport).
@@ -122,9 +124,15 @@ The [ES Module specification](https://html.spec.whatwg.org/multipage/webappapis.
 
 ES Modules enable web components to be developed in a modular way that is in alignment with other industry accepted implementations for JavaScript application development. You can define the interface of your custom element in a JS file which is then included with an `type="module"` attribute. ES Module files are merged into one file client side or can be rolled up into single packages ahead of time.
 
-Supposing an element is defined in awesome-explosion.js, you would import it using the following script:
+Supposing an element is defined in awesome-explosion.js, you would import it using one of the following script:
 ```html
 <script type="module" src="awesome-explosion.js"></script>
+...
+<script type="module">
+  import 'awesome-explosion.js';
+  ...
+  import {awesomeExplosion} from '@awesome-things/awesome-explosion';
+</script>
 ```
 
 Now you can use the awesome-explosion element in your own pages:
