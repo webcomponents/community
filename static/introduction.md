@@ -79,7 +79,8 @@ shadowRoot.innerHTML = '<h1>Hello Shadow DOM</h1>'; // Could also use appendChil
 ```
 # Libraries for building web components
 Many libraries already exist that make it easier to build web components. [The libraries section](https://www.webcomponents.org/libraries) of the site has additional details but here are some you can try out:
- * [Polymer](https://www.polymer-project.org) provides a set of features for creating custom elements.
+ * [Hybrids](https://github.com/hybridsjs/hybrids) is a UI library for creating Web Components with simple and functional API.
  * [LitElement](https://github.com/Polymer/lit-element) uses [lit-html](https://github.com/Polymer/lit-html) to render into the element's Shadow DOM and adds API to help manage element properties and attributes.
+ * [Polymer](https://www.polymer-project.org) provides a set of features for creating custom elements.
  * [Slim.js](http://slimjs.com) is an opensource lightweight web component library that provides data-binding and extended capabilities for components, using es6 native class inheritance.
  * [Stencil](https://stenciljs.com/) is an opensource compiler that generates standards-compliant web components.
