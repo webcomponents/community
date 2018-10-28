@@ -6,7 +6,6 @@ date: 2014-11-30
 original_date: 2014-11-30
 link: "http://thewebplatform.libsyn.com/mozilla-brick-a-uikit-for-mobile-first"
 category: podcasts
-layout: single
 ---
 
 Mozilla Brick contributors Matt Claypotch and Soledad Penades join The Web Platform Podcast to talk about building UI focused Web Components for 'Mobile First' Web Development.

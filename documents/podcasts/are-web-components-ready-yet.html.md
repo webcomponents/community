@@ -6,7 +6,6 @@ date: 2015-07-28
 original_date: 2015-07-28
 link: http://thewebplatform.libsyn.com/54-are-web-components-ready-yet
 category: podcasts
-layout: single
 ---
 
 An honest & candid talk about what we learned since the beginning of Web Components; a hard look at the good, the bad, and the ugly. Christian Heilmann (@codepo8), Wilson Page (@wilsonpage), & Rob Eisenberg (@eisenbergeffect) talks with the panel on development with Web Components in today's production environments.

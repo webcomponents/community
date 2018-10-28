@@ -6,7 +6,6 @@ date: 2014-12-12
 original_date: 2014-12-12
 link: "http://thewebplatform.libsyn.com/21-the-x-tag-project"
 category: podcasts
-layout: single
 ---
 
 Daniel Buchner talks with The Web Platform Podcast on x-tag, the Custom Elements library competitor to Polymer, that he created alongside former Mozillian & Kraken Developer, Arron Schaar.

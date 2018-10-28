@@ -6,7 +6,6 @@ date: 2014-09-03
 original_date: 2014-09-03
 link: "http://thewebplatform.libsyn.com/web-accessibility-for-javascript-components-and-custom-elements"
 category: podcasts
-layout: single
 ---
 
 Steve Faulkner and Marcy Sutton discuss the lack of focus in development today with regards to building accessible applications & services. Many times web accessibility becomes an afterthought in creating a software product, having low prioritization from the business side until it is a real painful problem.

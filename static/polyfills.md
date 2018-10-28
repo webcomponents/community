@@ -6,32 +6,18 @@ The polyfills are available on GitHub: https://github.com/WebComponents/webcompo
 
 To install the polyfills, run this command:
 ```
-bower install --save webcomponents/webcomponentsjs
+npm install @webcomponents/webcomponentsjs
 ```
+There are severeal different ways of applying the polyfill [which you can read about here](https://github.com/WebComponents/webcomponentsjs#how-to-use). The easiest way to utilize webcomponents across platform is the following:
+```html
+<!-- load webcomponents bundle, which includes all the necessary polyfills -->
+<script src="node_modules/@webcomponents/webcomponentsjs/webcomponents-bundle.js"></script>
 
-To feature detect:
-```js
-(function() {
-  if ('registerElement' in document
-      && 'import' in document.createElement('link')
-      && 'content' in document.createElement('template')) {
-    // platform is good!
-  } else {
-    // polyfill the platform!
-    var e = document.createElement('script');
-    e.src = '/bower_components/webcomponentsjs/webcomponents-lite.min.js';
-    document.body.appendChild(e);
-  }
-})();
-```
+<!-- load the element -->
+<script type="module" src="my-element.js"></script>
 
-# Shadow DOM polyfill
-The shadow DOM polyfill provides shadow DOM v0 functionality in browsers that don't support it natively. See the Compatibility table for more information.
-
-The shadow DOM polyfill, though very powerful, is also fairly intrusive and can add significant performance overhead. For this reason, many Web Components-based libraries like Polymer work around having to use this polyfill, and provide a lighter-weight alternative. These libraries don’t require loading the full Web Components polyfill, but instead use a “lite” version of the polyfill with shadow DOM removed:
-
-```
-webcomponents/webcomponents-lite.min.js
+<!-- use the element -->
+<my-element></my-element>
 ```
 
 ## Wrappers
@@ -79,7 +65,7 @@ If you plan to work with elements that need to be wrapped over and over, try pas
 
 ## Event Retargeting
 An important aspect of the shadow DOM is that events are retargeted to never expose the shadow DOM to the light DOM. For example:
-```
+```js
 var div = document.createElement('div');
 div.innerHTML = 'Click me';
 var shadow = div.createShadowRoot();
@@ -126,35 +112,3 @@ The Custom Elements specification is still under discussion. The polyfill implem
  * `attributeChangedCallback(attributeName)` is called when a custom element's attribute value has changed
 
 `createdCallback` is invoked synchronously with element instantiation, the other callbacks are called asynchronously. The asynchronous callbacks generally use the `MutationObserver` timing model, which means they are called before layouts, paints, or other triggered events, so the developer need not worry about flashing content or other bad things happening before the callback has a chance to react to changes.
-
-# HTML Imports Polyfill
-
-In imported documents, `href` and `src` attributes in HTML, and `urlproperties` in CSS files, are relative to the location of the imported document, not the main document.
-
-The HTML Imports polyfill begins processing link tags when the `DOMContentLoaded` event fires. To know when loading is complete, listen for the `HTMLImportsLoaded` event on document or window. For example:
-
-```html
-<script>
-window.addEventListener('HTMLImportsLoaded', function(e) {
-  // all imports loaded
-});
-</script>
-```
-
-The polyfill loads linked stylesheets, external scripts, and nested HTML imports, but does not parse any data in the loaded resources. For parsing imports, combine HTML Imports with Custom Elements. As long as the HTML Imports is loaded first, the Custom Elements polyfill will detect it, and process all imports when `HTMLImportsLoaded` event fires.
-
-## The WebComponentsReady event
-
-Under native imports, `<script>` tags in the main document block the loading of imports. This is to ensure the imports have loaded and any registered elements in them have been upgraded. 
-
-This native behavior is difficult to polyfill so the HTML Imports polyfill doesn't try. Instead the `WebComponentsReady` event is a stand in for this behavior:
-
-```html
-<script>
-  window.addEventListener('WebComponentsReady', function(e) {
-    // imports are loaded and elements have been registered
-  });
-</script>
-```
-
-In native HTML Imports, `document.currentScript.ownerDocument` references the import document itself. In the polyfill, use `document._currentScript.ownerDocument` (note the underscore).
