@@ -24,7 +24,7 @@ The components on this site provide new HTML elements that you can use in your w
 Using a custom element is as simple as importing it, and using the new tags in an HTML document. For example, to use the [paper-button element](https://www.webcomponents.org/element/@polymer/paper-button):
 
 ```html
-<script type="module" href="node_modules/@polymer/paper-button/paper-button.js"></script>
+<script type="module" src="node_modules/@polymer/paper-button/paper-button.js"></script>
 ...
 <paper-button raised class="indigo">raised</paper-button>
 ```
