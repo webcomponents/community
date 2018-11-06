@@ -113,6 +113,13 @@ module.exports = {
         gravatar: "f3d812c50181277a75a997270518ee15",
         twitter: "findajit"
     },
+    btopro: {
+        name: "Bryan Ollendyke",
+        bio: "Bryan is lead of HAX and ELMS: Learning Network at Penn State. ELMS:LN and HAX seek to democratise content production and transform education through advanced authoring tools.",
+        gravatar: "8f21ddd50ee3f5856d9be912e6a5b37d",
+        github: "329735",
+        twitter: "btopro"
+    },
     bill_heaton: {
         name: "Bill Heaton",
         bio: "Bill is a Senior UI Engineer at CrowdStrike who loves to build great applications with Ember.js.",
