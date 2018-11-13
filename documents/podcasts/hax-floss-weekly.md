@@ -4,7 +4,7 @@ authors: [btopro]
 podcast: "FLOSS Weekly"
 date: 2018-11-06
 original_date: 2018-08-29
-link: "https://www.stitcher.com/podcast/twit/floss-weekly/e/56008377"
+link: "https://twit.tv/shows/floss-weekly/episodes/495"
 category: podcasts
 ---
 
