@@ -20,6 +20,8 @@ This list has been compiled by the community and can be modified [via pull reque
  * [LitElement](https://github.com/Polymer/lit-element) uses [lit-html](https://github.com/Polymer/lit-html) to render into the element's Shadow DOM and adds API to help manage element properties and attributes. LitElement reacts to changes in properties and renders declaratively using lit-html.
  
  * [Polymer](https://www.polymer-project.org/) is a web component library built by Google, with a simple element creation API. Polymer offers one- and two-way data binding into element templates, and provides shims for better cross-browser performance.
+ 
+ * [ShadowQuery](https://github.com/schrotie/shadow-query) is a non-intrusive micro-library that makes writing high performance vanilla web components straightforward, simple, and concise without compromising your template syntax or your control over any implementation detail.
 
  * [Skate.js](https://skatejs.gitbooks.io/skatejs/content/) is a library built on top of the W3C web component specs that enables you to write functional and performant web components with a very small footprint. Skate is inherently cross-framework compatible. For example, it works seamlessly with - and complements - React and other frameworks.
  
