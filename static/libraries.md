@@ -15,14 +15,18 @@ When choosing a web component library, make sure it has a large enough featurese
 
 This list has been compiled by the community and can be modified [via pull request under the community repository](https://github.com/webcomponents/community/edit/master/static/libraries.md) for this website. Projects are listed alphabetically and are known to support all four aspects of the web components specification.
 
- * [Hybrids](https://github.com/hybridsjs/hybrids) is a UI library for creating web components with simple and functional API. The library uses plain objects and pure functions for defining custom elements, which allow very flexible composition. It provides built-in cache mechanism, template engine based on tagged template literals, and integration with developer tools. 
+ * [Hybrids](https://github.com/hybridsjs/hybrids) is a UI library for creating web components with simple and functional API. The library uses plain objects and pure functions for defining custom elements, which allow very flexible composition. It provides built-in cache mechanism, template engine based on tagged template literals, and integration with developer tools.
 
  * [LitElement](https://github.com/Polymer/lit-element) uses [lit-html](https://github.com/Polymer/lit-html) to render into the element's Shadow DOM and adds API to help manage element properties and attributes. LitElement reacts to changes in properties and renders declaratively using lit-html.
- 
+
  * [Polymer](https://www.polymer-project.org/) is a web component library built by Google, with a simple element creation API. Polymer offers one- and two-way data binding into element templates, and provides shims for better cross-browser performance.
 
  * [Skate.js](https://skatejs.gitbooks.io/skatejs/content/) is a library built on top of the W3C web component specs that enables you to write functional and performant web components with a very small footprint. Skate is inherently cross-framework compatible. For example, it works seamlessly with - and complements - React and other frameworks.
- 
+
  * [Slim.js](http://slimjs.com) Slim.js is a lightweight web component library that provides extended capabilities for components, such as data binding, using es6 native class inheritance. This library is focused for providing the developer the ability to write robust and native web components without the hassle of dependencies and an overhead of a framework.
- 
+
  * [Stencil](https://stenciljs.com/) is an opensource compiler that generates standards-compliant web components.
+
+ # Development tools
+
+ * [showroom](https://github.com/eavichay/showroom) is a visual development and testing environment for web components of any stack. It provides a user-inserface and a puppeteer plugin to test custom elements in isolated environment.
