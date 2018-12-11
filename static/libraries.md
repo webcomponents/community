@@ -27,5 +27,5 @@ This list has been compiled by the community and can be modified [via pull reque
  
  * [Stencil](https://stenciljs.com/) is an opensource compiler that generates standards-compliant web components.
  
- * [SmartElement](https://www.htmlelements.com/) is a web component library with API for creating Custom Elements. Smart offers two-way data binding, types checking for properties, types and return value checking for methods, lifecycle callbacks, property change notifications,
+ * [Smart Custom Element](https://github.com/HTMLElements/smart-custom-element) is a web component library with API for creating Custom Elements. Smart offers two-way data binding, types checking for properties, types and return value checking for methods, lifecycle callbacks, property change notifications,
  element templates. 
