@@ -17,6 +17,8 @@ This list has been compiled by the community and can be modified [via pull reque
 
  * [Hybrids](https://github.com/hybridsjs/hybrids) is a UI library for creating web components with simple and functional API. The library uses plain objects and pure functions for defining custom elements, which allow very flexible composition. It provides built-in cache mechanism, template engine based on tagged template literals, and integration with developer tools. 
 
+ * [Lightning Web Components](https://lwc.dev) is an enterprise-grade web component foundation built by Salesforce including custom elements and a UI framework. LWC is licensed as MIT and can be used within or outside of Salesforce. 
+
  * [LitElement](https://github.com/Polymer/lit-element) uses [lit-html](https://github.com/Polymer/lit-html) to render into the element's Shadow DOM and adds API to help manage element properties and attributes. LitElement reacts to changes in properties and renders declaratively using lit-html.
  
  * [Polymer](https://www.polymer-project.org/) is a web component library built by Google, with a simple element creation API. Polymer offers one- and two-way data binding into element templates, and provides shims for better cross-browser performance.
