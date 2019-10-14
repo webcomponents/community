@@ -21,7 +21,7 @@ This list has been compiled by the community and can be modified [via pull reque
  
  * [Polymer](https://www.polymer-project.org/) is a web component library built by Google, with a simple element creation API. Polymer offers one- and two-way data binding into element templates, and provides shims for better cross-browser performance.
 
- * [Skate.js](https://skatejs.gitbooks.io/skatejs/content/) is a library built on top of the W3C web component specs that enables you to write functional and performant web components with a very small footprint. Skate is inherently cross-framework compatible. For example, it works seamlessly with - and complements - React and other frameworks.
+ * [Skate.js](https://skatejs.netlify.com) is a library built on top of the W3C web component specs that enables you to write functional and performant web components with a very small footprint. Skate is inherently cross-framework compatible. For example, it works seamlessly with - and complements - React and other frameworks.
  
  * [Slim.js](http://slimjs.com) Slim.js is a lightweight web component library that provides extended capabilities for components, such as data binding, using es6 native class inheritance. This library is focused for providing the developer the ability to write robust and native web components without the hassle of dependencies and an overhead of a framework.
  
