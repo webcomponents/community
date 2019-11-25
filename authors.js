@@ -353,6 +353,12 @@ module.exports = {
         github: "1194982",
         twitter: "zzarcon"
     },
+    henry_lim: {
+        name: "Henry Lim",
+        bio: "Henry is a Google Developer Expert in Web Technologies",
+        github: "9625047",
+        twitter: "henrylim96"
+    },
     hidde_de_vries: {
         name: "Hidde de Vries",
         bio: "Hidde is web designer and developer, experienced with things like responsive web design, front-end development and progressive enhancement.",
