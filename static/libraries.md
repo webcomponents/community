@@ -15,6 +15,8 @@ When choosing a web component library, make sure it has a large enough featurese
 
 This list has been compiled by the community and can be modified [via pull request under the community repository](https://github.com/webcomponents/community/edit/master/static/libraries.md) for this website. Projects are listed alphabetically and are known to support all four aspects of the web components specification.
 
+* [FAST](https://fast.design) is a web component library built by Microsoft, which offers several packages to leverage depending on your project needs. [Fast Element](https://github.com/microsoft/fast/tree/master/packages/web-components/fast-element) is a lightweight means to easily build performant, memory-efficient, standards-compliant Web Components. [Fast Foundation](https://github.com/microsoft/fast/tree/master/packages/web-components/fast-foundation) is a library of Web Component classes, templates, and other utilities built on fast-element intended to be composed into registered Web Components.
+
  * [Hybrids](https://github.com/hybridsjs/hybrids) is a UI library for creating web components with simple and functional API. The library uses plain objects and pure functions for defining custom elements, which allow very flexible composition. It provides built-in cache mechanism, template engine based on tagged template literals, and integration with developer tools. 
 
  * [LitElement](https://github.com/Polymer/lit-element) uses [lit-html](https://github.com/Polymer/lit-html) to render into the element's Shadow DOM and adds API to help manage element properties and attributes. LitElement reacts to changes in properties and renders declaratively using lit-html.
