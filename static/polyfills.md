@@ -8,7 +8,7 @@ To install the polyfills, run this command:
 ```
 npm install @webcomponents/webcomponentsjs
 ```
-There are severeal different ways of applying the polyfill [which you can read about here](https://github.com/WebComponents/webcomponentsjs#how-to-use). The easiest way to utilize webcomponents across platform is the following:
+There are severeal different ways of applying the polyfill [which you can read about here](https://github.com/webcomponents/polyfills/tree/master/packages/webcomponentsjs#how-to-use). The easiest way to utilize webcomponents across platform is the following:
 ```html
 <!-- load webcomponents bundle, which includes all the necessary polyfills -->
 <script src="node_modules/@webcomponents/webcomponentsjs/webcomponents-bundle.js"></script>
