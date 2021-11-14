@@ -7,10 +7,10 @@ Web components are based on existing web standards. Features to support web comp
 Web components are based on four main specifications:
 
 ## Custom Elements
-The [Custom Elements specification](https://w3c.github.io/webcomponents/spec/custom/) lays the foundation for designing and using new types of DOM elements.
+The [Custom Elements specification](https://wicg.github.io/webcomponents/spec/custom/) lays the foundation for designing and using new types of DOM elements.
 
 ## Shadow DOM
-The [shadow DOM specification](https://w3c.github.io/webcomponents/spec/shadow/) defines how to use encapsulated style and markup in web components.
+The [shadow DOM specification](https://wicg.github.io/webcomponents/spec/shadow/) defines how to use encapsulated style and markup in web components.
 
 ## ES Modules
 The [ES Modules specification](https://html.spec.whatwg.org/multipage/webappapis.html#integration-with-the-javascript-module-system) defines the inclusion and reuse of JS documents in a standards based, modular, performant way.
@@ -80,7 +80,7 @@ shadowRoot.innerHTML = '<h1>Hello Shadow DOM</h1>'; // Could also use appendChil
 # Libraries for building web components
 Many libraries already exist that make it easier to build web components. [The libraries section](https://www.webcomponents.org/libraries) of the site has additional details but here are some you can try out:
  * [Hybrids](https://github.com/hybridsjs/hybrids) is a UI library for creating Web Components with simple and functional API.
- * [LitElement](https://github.com/Polymer/lit-element) uses [lit-html](https://github.com/Polymer/lit-html) to render into the element's Shadow DOM and adds API to help manage element properties and attributes.
+ * [lit-element](https://github.com/lit/lit/tree/main/packages/lit-element) uses [lit-html](https://github.com/lit/lit/tree/main/packages/lit-html) to render into the element's Shadow DOM and adds API to help manage element properties and attributes.
  * [Polymer](https://www.polymer-project.org) provides a set of features for creating custom elements.
  * [Slim.js](http://slimjs.com) is an opensource lightweight web component library that provides data-binding and extended capabilities for components, using es6 native class inheritance.
  * [Stencil](https://stenciljs.com/) is an opensource compiler that generates standards-compliant web components.
