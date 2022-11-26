@@ -28,3 +28,5 @@ This list has been compiled by the community and can be modified [via pull reque
  * [Slim.js](http://slimjs.com) Slim.js is a lightweight web component library that provides extended capabilities for components, such as data binding, using es6 native class inheritance. This library is focused for providing the developer the ability to write robust and native web components without the hassle of dependencies and an overhead of a framework.
  
  * [Stencil](https://stenciljs.com/) is an opensource compiler that generates standards-compliant web components.
+
+ * [Smart](https://htmlelements.com/) is a web component framework built by jQWidgets with a simple element creation API, template engine, typed properties and methods, propery two-way bindings, lifecycle callbacks, events manager.
